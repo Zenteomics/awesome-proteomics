@@ -1,0 +1,46 @@
+name: Report a broken link
+description: Report a dead or outdated link in the list
+title: "[Broken Link] "
+labels: ["broken-link", "maintenance"]
+body:
+  - type: input
+    id: entry
+    attributes:
+      label: Which entry has the broken link?
+      placeholder: e.g., "MSFragger in Discovery Proteomics section"
+    validations:
+      required: true
+  - type: input
+    id: broken_url
+    attributes:
+      label: Broken URL
+      placeholder: https://...
+    validations:
+      required: true
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: What is wrong?
+      options:
+        - Link returns 404 (page not found)
+        - Link redirects to a different resource
+        - Repository has been archived or deleted
+        - Tool has been renamed or moved
+        - Domain has expired
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: replacement
+    attributes:
+      label: Suggested replacement URL (if known)
+      placeholder: https://...
+    validations:
+      required: false
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional context
+      placeholder: "The tool was renamed to X and moved to Y..."
+    validations:
+      required: false

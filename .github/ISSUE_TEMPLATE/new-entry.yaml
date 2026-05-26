@@ -1,0 +1,77 @@
+name: Suggest a new entry
+description: Suggest a tool, database, resource, or paper for the list
+title: "[New Entry] "
+labels: ["new-entry"]
+body:
+  - type: dropdown
+    id: section
+    attributes:
+      label: Which section does this belong in?
+      options:
+        - General Resources
+        - Mass Spectrometry Fundamentals
+        - Sample Preparation
+        - Discovery Proteomics
+        - Quantitative Proteomics
+        - Post-Translational Modifications
+        - Single-Cell Proteomics
+        - Bioinformatics & Computational Tools
+        - AI & Machine Learning in Proteomics
+        - Data Repositories & Standards
+        - Protein Databases & Knowledge Bases
+        - Multi-Omics Integration
+        - Frontier & Niche Techniques
+        - Community & Organizations
+        - Deprecated / Legacy
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Tool/resource name
+      placeholder: e.g., DIA-NN
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      placeholder: https://github.com/...
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: One-line description
+      description: Factual, concise, no marketing language. See CONTRIBUTING.md for examples.
+      placeholder: "Open-source DIA analysis tool with library-free search and match-between-runs."
+    validations:
+      required: true
+  - type: checkboxes
+    id: tags
+    attributes:
+      label: Applicable tags
+      options:
+        - label: "Commercial tool (paid license required)"
+        - label: "Containerized (Docker/Singularity available)"
+        - label: "I am affiliated with this tool (vendor, author, contributor)"
+  - type: textarea
+    id: context
+    attributes:
+      label: Why should this be included?
+      description: Brief context on why this tool matters. Personal experience is welcome.
+      placeholder: "I have used this for three years on Thermo data and it consistently outperforms..."
+    validations:
+      required: false
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Pre-submission checklist
+      options:
+        - label: "I checked that this entry is not already in the list"
+          required: true
+        - label: "The link is alive and points to the correct resource"
+          required: true
+        - label: "I read CONTRIBUTING.md"
+          required: true

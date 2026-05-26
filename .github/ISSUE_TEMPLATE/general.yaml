@@ -1,0 +1,19 @@
+name: General issue
+description: Bug reports, meta feedback, governance questions, or anything else
+title: "[General] "
+labels: ["general"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What is this about?
+      description: Describe the issue, question, or feedback.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Screenshots, links, or other relevant information.
+    validations:
+      required: false

@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Tool Recommendations
+    url: https://github.com/zenteomics/awesome-proteomics/discussions/categories/tool-recommendations
+    about: "Not sure if a tool belongs? Ask the community first in Discussions."
+  - name: Guide Ideas
+    url: https://github.com/zenteomics/awesome-proteomics/discussions/categories/guide-ideas
+    about: "Want to brainstorm a guide topic before proposing? Start a Discussion."
+  - name: General Questions
+    url: https://github.com/zenteomics/awesome-proteomics/discussions/categories/general
+    about: "Questions, introductions, or casual conversation belong in Discussions."

@@ -1,0 +1,61 @@
+name: Propose a guide or mini-guide
+description: Propose a new guide, mini-guide, or workflow for the guides/ or workflows/ directory
+title: "[Guide Proposal] "
+labels: ["guide-proposal"]
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: What type of content?
+      options:
+        - Full guide (1,000-1,500 words, opinionated deep-dive)
+        - Mini-guide (300-500 words, focused comparison or decision tree)
+        - Workflow (step-by-step pipeline with code snippets)
+    validations:
+      required: true
+  - type: input
+    id: title
+    attributes:
+      label: Proposed title
+      placeholder: e.g., "DIA Tools Comparison 2026"
+    validations:
+      required: true
+  - type: textarea
+    id: abstract
+    attributes:
+      label: Abstract (2-3 sentences)
+      description: What will this guide cover? What question does it answer?
+      placeholder: "This guide compares the three major DIA analysis tools (DIA-NN, Spectronaut, MaxDIA) across..."
+    validations:
+      required: true
+  - type: textarea
+    id: outline
+    attributes:
+      label: Rough outline
+      description: List the major sections or decision points the guide will cover.
+      placeholder: |
+        1. When to use DIA vs DDA
+        2. Library-free vs library-based
+        3. Tool comparison table
+        4. Recommendations by scenario
+    validations:
+      required: true
+  - type: textarea
+    id: qualifications
+    attributes:
+      label: Your background with this topic
+      description: Brief note on your experience. This helps us match reviewers.
+      placeholder: "I have run DIA experiments on Thermo instruments for 4 years and benchmarked all three tools on..."
+    validations:
+      required: false
+  - type: checkboxes
+    id: commitments
+    attributes:
+      label: Commitments
+      options:
+        - label: "I will distinguish factual claims from personal opinions"
+          required: true
+        - label: "I understand the guide will be reviewed before merging"
+          required: true
+        - label: "I am willing to update the guide if it becomes outdated"
+          required: false
