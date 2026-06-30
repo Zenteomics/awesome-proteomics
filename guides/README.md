@@ -17,15 +17,15 @@ When contributors disagree, we welcome competing guides. Both stay in the direct
 
 ## Published guides
 
-*None yet. The first guides will ship during Phase 2 (Seed Content).*
-
+| Guide | Type | Status | Description |
+| --- | --- | --- | --- |
+| [Beginner's Guide to Proteomics Data Analysis](beginners-guide.md) | Full | Current | Zero-jargon intro: data formats, experiment types, first tools, where to learn more. Merges the former getting-started.md entry point. |
+| [File Format Cheat Sheet](file-format-cheat-sheet.md) | Reference | Current | Every common proteomics file family (raw vendor, open spectrum, identification, quantification, libraries, FASTA) plus a Rosetta Stone conversion table. |
+| [Tool Compatibility Matrix](compatibility-matrix.md) | Reference | Current | Which tools read which vendor formats? |
 ## Planned guides
 
 | Guide | Type | Status | Description |
 | --- | --- | --- | --- |
-| [Beginner's Guide to Proteomics Data Analysis](beginners-guide.md) | Full | Planned | Zero-jargon intro: data formats, experiment types, first tools, where to learn more |
-| [File Format Cheat Sheet](file-format-cheat-sheet.md) | Reference | Planned | mzML, pepXML, mzTab, vendor formats, and a conversion table |
-| [Tool Compatibility Matrix](compatibility-matrix.md) | Reference | Planned | Which tools read which vendor formats? |
 | [Starter Packs](starter-packs.md) | Mini-guide | Planned | "What 3 tools do I need?" for DDA, DIA, PTMs, single-cell |
 | [DIA Tools Comparison](dia-tools-comparison.md) | Full | Planned | DIA-NN vs Spectronaut vs MaxDIA vs others |
 | [Single-Cell Proteomics Best Practices](single-cell-best-practices.md) | Full | Planned | Sample prep to quantification |

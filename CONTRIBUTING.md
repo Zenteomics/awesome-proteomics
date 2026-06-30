@@ -84,6 +84,8 @@ The description is the hardest part to get right. It should be **technical, fact
 
 - Never duplicate the full description in multiple sections.
 
+> **Ordering within a section:** Tool and software sections are ordered by curated importance (the most essential and widely used entries first), reflecting this list's "judgment over aggregation" philosophy. Database and reference sections (Protein Databases & Knowledge Bases, Data Repositories & Standards, and Community & Organizations) are ordered alphabetically for predictable lookup.
+
 ### Quality bar
 
 We **do not** list:

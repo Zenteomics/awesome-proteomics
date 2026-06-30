@@ -546,7 +546,7 @@ Tags stack: a single entry can read `[DIA]` `[CLI]` 🐧 🪟. No platform emoji
 
 > Public repositories, data standards, controlled vocabularies, and format specifications.
 
-&#x1F4D6; *Guides:* [File Format Cheat Sheet](guides/file-format-cheat-sheet.md) *(planned)* &middot; [Tool Compatibility Matrix](guides/compatibility-matrix.md) *(planned)*
+&#x1F4D6; *Guides:* [File Format Cheat Sheet](guides/file-format-cheat-sheet.md) &middot; [Tool Compatibility Matrix](guides/compatibility-matrix.md) *(planned)*
 
 - [CPTAC / Proteomic Data Commons](https://pdc.cancer.gov/) - Repository for harmonized cancer proteogenomic datasets from the CPTAC program.
 - [HUPO-PSI Standards](https://www.psidev.info/) - Community data standards and controlled vocabularies (mzML, mzIdentML, mzTab, and more).
@@ -743,7 +743,9 @@ This repository has two companion directories for content that goes beyond a lin
 | `guides/`    | Opinionated expert deep-dives, decision trees, comparison tables, and mini-guides (500 words) | [All Guides](guides/)       |
 | `workflows/` | Practitioner start-to-finish pipelines with Nextflow/Snakemake snippets                       | [All Workflows](workflows/) |
 
-**Planned guides:** [Beginner's Guide](guides/beginners-guide.md) &middot; [File Format Cheat Sheet](guides/file-format-cheat-sheet.md) &middot; [Tool Compatibility Matrix](guides/compatibility-matrix.md) &middot; [Starter Packs](guides/starter-packs.md) &middot; [DIA Tools Comparison](guides/dia-tools-comparison.md)
+**Published guides:** [Beginner's Guide](guides/beginners-guide.md) &middot; [File Format Cheat Sheet](guides/file-format-cheat-sheet.md)
+
+**Planned guides:** [Tool Compatibility Matrix](guides/compatibility-matrix.md) &middot; [Starter Packs](guides/starter-packs.md) &middot; [DIA Tools Comparison](guides/dia-tools-comparison.md)
 
 **Planned workflows:** [Label-Free DDA](workflows/label-free-dda.md) &middot; [DIA Analysis](workflows/dia-analysis.md) &middot; [Phosphoproteomics](workflows/phosphoproteomics.md) &middot; [Single-Cell](workflows/single-cell.md)
 
