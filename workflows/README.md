@@ -18,13 +18,14 @@ Every workflow includes:
 
 ## Published workflows
 
-*None yet. The first workflow will ship during Phase 2 (Seed Content).*
+| Workflow | Status | Description |
+| --- | --- | --- |
+| [Label-Free DDA](label-free-dda.md) | Current | End-to-end label-free DDA with quantms (Nextflow), from raw files to differential abundance; FragPipe and MaxQuant alternatives, plus a sourced list of recent Nextflow pipelines. |
 
 ## Planned workflows
 
 | Workflow | Status | Description |
 | --- | --- | --- |
-| [Label-Free DDA Quantification](label-free-dda.md) | Planned | Raw files to volcano plots. ThermoRawFileParser, MSFragger/FragPipe, IonQuant, MSstats. |
 | [DIA Analysis](dia-analysis.md) | Planned | Library-based and library-free approaches. DIA-NN and Spectronaut paths. |
 | [Phosphoproteomics](phosphoproteomics.md) | Planned | Enrichment to localization scoring. IMAC/TiO2 to MaxQuant/MSFragger. |
 | [Single-Cell Proteomics](single-cell.md) | Planned | Sample prep to quantification. SCoPE2, plexDIA, and label-free approaches. |
@@ -40,4 +41,4 @@ See [CONTRIBUTING.md](../CONTRIBUTING.md) for full details.
 
 ## Workflow template
 
-Every workflow uses YAML frontmatter. See [WORKFLOW_TEMPLATE.md](WORKFLOW_TEMPLATE.md) for the full template
+Every workflow uses YAML frontmatter. See [WORKFLOW_TEMPLATE.md](WORKFLOW_TEMPLATE.md) for the full template.

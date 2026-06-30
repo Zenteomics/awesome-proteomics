@@ -39,7 +39,8 @@
 
 <!-- Living changelog. Format: YYYY-MM-DD: [Tool Name](url) - One-line description. -->
 
-*No entries yet. This list is being seeded. [Contributions welcome!](CONTRIBUTING.md)*
+- 2026-06-30: [Label-Free DDA workflow](workflows/label-free-dda.md) - First practitioner workflow published (quantms-centered, with FragPipe and MaxQuant alternatives).
+- 2026-06-30: [Frag'n'Flow](https://doi.org/10.1186/s12859-025-06305-y) - Recent Nextflow pipeline wrapping FragPipe for large-scale LFQ, added to Cloud & HPC.
 
 ---
 
@@ -500,7 +501,10 @@ Tags stack: a single entry can read `[DIA]` `[CLI]` 🐧 🪟. No platform emoji
 
 ### Cloud & HPC
 
-- [nf-core/quantms](https://github.com/bigbio/quantms) - Nextflow pipeline for reproducible DDA-LFQ, TMT, and DIA-LFQ quantification at scale. `[DIA]` `[TMT]` `[Label-Free]` `[CLI]` 📦
+- [nf-core/quantms](https://github.com/bigbio/quantms) - Nextflow pipeline for reproducible DDA-LFQ, TMT, and DIA-LFQ quantification at scale (active development at bigbio/quantms; the nf-core mirror is archived at 1.2.0). `[DIA]` `[TMT]` `[Label-Free]` `[CLI]` 📦
+- [Frag'n'Flow](https://doi.org/10.1186/s12859-025-06305-y) - Nextflow pipeline wrapping the FragPipe ecosystem for large-scale label-free DDA quantification (2026). `[DDA]` `[Label-Free]` `[CLI]` 📦
+- [nf-core/proteomicslfq](https://github.com/nf-core/proteomicslfq) - OpenMS and MSstats label-free quantification pipeline; the predecessor to quantms, now largely superseded (DSL1). `[Label-Free]` `[CLI]` 📦
+- [snakemake-ms-proteomics](https://github.com/MPUSP/snakemake-ms-proteomics) - Snakemake pipeline for label-free DDA built on FragPipe and MSstats with automated quality control. `[DDA]` `[Label-Free]` `[CLI]` 📦
 - [Galaxy Proteomics (usegalaxy.eu)](https://proteomics.usegalaxy.eu/) - Dedicated European Galaxy proteomics server (Galaxy-P) hosting MS proteomics and proteogenomics tools and workflows that run in the browser without local installation. `[GUI]`
 - [Sage](https://github.com/lazear/sage) - See [Identification](#identification). Cloud-ready Rust engine that streams data directly from S3 for large-scale searches.
 
@@ -546,7 +550,7 @@ Tags stack: a single entry can read `[DIA]` `[CLI]` 🐧 🪟. No platform emoji
 
 > Public repositories, data standards, controlled vocabularies, and format specifications.
 
-&#x1F4D6; *Guides:* [File Format Cheat Sheet](guides/file-format-cheat-sheet.md) &middot; [Tool Compatibility Matrix](guides/compatibility-matrix.md) *(planned)*
+&#x1F4D6; *Guides:* [File Format Cheat Sheet](guides/file-format-cheat-sheet.md) &middot; [Tool Compatibility Matrix](guides/compatibility-matrix.md)
 
 - [CPTAC / Proteomic Data Commons](https://pdc.cancer.gov/) - Repository for harmonized cancer proteogenomic datasets from the CPTAC program.
 - [HUPO-PSI Standards](https://www.psidev.info/) - Community data standards and controlled vocabularies (mzML, mzIdentML, mzTab, and more).
@@ -743,11 +747,13 @@ This repository has two companion directories for content that goes beyond a lin
 | `guides/`    | Opinionated expert deep-dives, decision trees, comparison tables, and mini-guides (500 words) | [All Guides](guides/)       |
 | `workflows/` | Practitioner start-to-finish pipelines with Nextflow/Snakemake snippets                       | [All Workflows](workflows/) |
 
-**Published guides:** [Beginner's Guide](guides/beginners-guide.md) &middot; [File Format Cheat Sheet](guides/file-format-cheat-sheet.md)
+**Published guides:** [Beginner's Guide](guides/beginners-guide.md) &middot; [File Format Cheat Sheet](guides/file-format-cheat-sheet.md) &middot; [Tool Compatibility Matrix](guides/compatibility-matrix.md)
 
-**Planned guides:** [Tool Compatibility Matrix](guides/compatibility-matrix.md) &middot; [Starter Packs](guides/starter-packs.md) &middot; [DIA Tools Comparison](guides/dia-tools-comparison.md)
+**Planned guides:** [Starter Packs](guides/starter-packs.md) &middot; [DIA Tools Comparison](guides/dia-tools-comparison.md)
 
-**Planned workflows:** [Label-Free DDA](workflows/label-free-dda.md) &middot; [DIA Analysis](workflows/dia-analysis.md) &middot; [Phosphoproteomics](workflows/phosphoproteomics.md) &middot; [Single-Cell](workflows/single-cell.md)
+**Published workflows:** [Label-Free DDA](workflows/label-free-dda.md)
+
+**Planned workflows:** [DIA Analysis](workflows/dia-analysis.md) &middot; [Phosphoproteomics](workflows/phosphoproteomics.md) &middot; [Single-Cell](workflows/single-cell.md)
 
 Want to write a guide? See the [guide authorship track](CONTRIBUTING.md#guide-and-workflow-authorship) in CONTRIBUTING.md.
 
