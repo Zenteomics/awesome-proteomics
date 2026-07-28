@@ -1,0 +1,9 @@
+# Default markdownlint rules for this repo.
+# README.md also disables a few rules inline for badge/HTML layout.
+
+default: true
+MD013: false # long URLs, table cells, category paths
+MD024: false # backlog may need disambiguated near-duplicate titles
+MD033: false # README HTML badges / centering
+MD034: false # bare URLs occasionally needed
+MD041: false # README starts with HTML, not a heading

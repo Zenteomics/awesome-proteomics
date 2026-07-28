@@ -29,24 +29,14 @@
 
 **Project Health** &middot; Links Verified: 2026-06-29 | New Tools this Month: &mdash; | Stale Entries Pruned: &mdash;
 
-*Inclusion does not constitute endorsement. Commercial tools are marked with 💰. See the [contribution guidelines](CONTRIBUTING.md) for entry format and quality bar.*
+_Inclusion does not constitute endorsement. Commercial tools are marked with 💰. See the [contribution guidelines](CONTRIBUTING.md) for entry format and quality bar._
 
-**Scope:** Mass spectrometry-based proteomics, spanning both bottom-up / shotgun and top-down / native approaches. Affinity- and aptamer-based platforms (for example Olink and SomaScan) are currently out of scope; this list deliberately stays MS-focused.
-
----
-
-## Recently Added
-
-<!-- Living changelog. Format: YYYY-MM-DD: [Tool Name](url) - One-line description. -->
-
-- 2026-06-30: [Label-Free DDA workflow](workflows/label-free-dda.md) - First practitioner workflow published (quantms-centered, with FragPipe and MaxQuant alternatives).
-- 2026-06-30: [Frag'n'Flow](https://doi.org/10.1186/s12859-025-06305-y) - Recent Nextflow pipeline wrapping FragPipe for large-scale LFQ, added to Cloud & HPC.
+**Scope:** Mass spectrometry-based proteomics. The list currently leans toward bottom-up / shotgun proteomics, with top-down / native approaches covered more selectively while our coverage grows. Affinity- and aptamer-based platforms (for example Olink and SomaScan) are out of scope; this list deliberately stays MS-focused.
 
 ---
 
 ## Contents
 
-- [Recently Added](#recently-added)
 - [Contents](#contents)
 - [Legend](#legend)
 - [General Resources](#general-resources)
@@ -95,8 +85,8 @@
   - [Metaproteomics](#metaproteomics)
   - [Proteogenomics](#proteogenomics)
   - [Other Emerging Approaches](#other-emerging-approaches)
+- [Deprecated \& Legacy](#deprecated--legacy)
 - [Community \& Organizations](#community--organizations)
-- [Deprecated / Legacy](#deprecated--legacy)
 - [Guides \& Workflows](#guides--workflows)
 - [Contributing](#contributing)
 - [License](#license)
@@ -109,39 +99,39 @@ Each entry follows the format `[Name](link) - One-line description.` with option
 
 **Interface** - how you use it:
 
-| Tag | Meaning |
-| ----- | --- |
-| `[CLI]` | Runs from the command line (terminal tool or script) |
-| `[GUI]` | Graphical desktop or web application |
+| Tag     | Meaning                                                                   |
+| ------- | ------------------------------------------------------------------------- |
+| `[CLI]` | Runs from the command line (terminal tool or script)                      |
+| `[GUI]` | Graphical desktop or web application                                      |
 | `[API]` | Importable library or package you call from code (Python, R, and similar) |
 
 **Data type / workflow** - what it processes:
 
-| Tag | Meaning |
-| ----- | --- |
-| `[DDA]` | Data-dependent acquisition |
-| `[DIA]` | Data-independent acquisition (includes SWATH) |
-| `[Label-Free]` | Label-free quantification |
-| `[TMT]` | Isobaric labeling (TMT / iTRAQ) |
-| `[SILAC]` | Metabolic labeling (SILAC) |
-| `[Targeted]` | Targeted assays (SRM / PRM) |
+| Tag            | Meaning                                       |
+| -------------- | --------------------------------------------- |
+| `[DDA]`        | Data-dependent acquisition                    |
+| `[DIA]`        | Data-independent acquisition (includes SWATH) |
+| `[Label-Free]` | Label-free quantification                     |
+| `[TMT]`        | Isobaric labeling (TMT / iTRAQ)               |
+| `[SILAC]`      | Metabolic labeling (SILAC)                    |
+| `[Targeted]`   | Targeted assays (SRM / PRM)                   |
 
 **Status** - maturity and licensing:
 
-| Emoji | Meaning |
-| ----- | --- |
-| 💰 | Commercial or paid license (a free academic tier may exist) |
-| 📦 | Containerized image available (Docker / Singularity) |
-| 🏭 | Production-grade / built for high throughput |
-| 🧪 | Experimental / research-stage |
+| Emoji | Meaning                                                     |
+| ----- | ----------------------------------------------------------- |
+| 💰    | Commercial or paid license (a free academic tier may exist) |
+| 📦    | Containerized image available (Docker / Singularity)        |
+| 🏭    | Production-grade / built for high throughput                |
+| 🧪    | Experimental / research-stage                               |
 
 **Platform** - shown only when support is non-obvious or restricted:
 
 | Emoji | Meaning |
-| ----- | --- |
-| 🐧 | Linux |
-| 🪟 | Windows |
-| 🍎 | macOS |
+| ----- | ------- |
+| 🐧    | Linux   |
+| 🪟    | Windows |
+| 🍎    | macOS   |
 
 Tags stack: a single entry can read `[DIA]` `[CLI]` 🐧 🪟. No platform emoji means the tool is broadly cross-platform or runs in the browser.
 
@@ -149,7 +139,7 @@ Tags stack: a single entry can read `[DIA]` `[CLI]` 🐧 🪟. No platform emoji
 
 ## General Resources
 
-*Last Verified: Q2 2026*
+_Last Verified: Q2 2026_
 
 > Start-here guides, courses, books, key reviews, milestone papers, and community media. Includes clinical and medical proteomics resources until that subfield warrants its own section.
 
@@ -213,10 +203,10 @@ Tags stack: a single entry can read `[DIA]` `[CLI]` 🐧 🪟. No platform emoji
 
 ## Mass Spectrometry Fundamentals
 
-*Last Verified: Q2 2026*
+_Last Verified: Q2 2026_
 
 > Instrument principles, ionization methods, mass analyzers, and data formats. Includes advanced MS applications (spatial proteomics, structural MS, HDX-MS, XL-MS, ion mobility, native MS) as sub-topics.
-
+>
 > Conceptual introductions to instrumentation and workflows are listed under [General Resources](#general-resources). The tools below help interpret spectra and plan experiments.
 
 - [Protein Prospector](https://prospector.ucsf.edu/) - Web suite for MS-based sequence database searching with utilities (MS-Product, MS-Digest, MS-Isotope) for calculating fragment ions, in silico digests, and isotope patterns.
@@ -245,7 +235,7 @@ Tags stack: a single entry can read `[DIA]` `[CLI]` 🐧 🪟. No platform emoji
 
 ## Sample Preparation
 
-*Last Verified: Q2 2026*
+_Last Verified: Q2 2026_
 
 > Protocols, method papers, kits, and bench-level resources. Includes [protocols.io](https://protocols.io) entries.
 
@@ -267,9 +257,11 @@ Tags stack: a single entry can read `[DIA]` `[CLI]` 🐧 🪟. No platform emoji
 
 ## Discovery Proteomics
 
-*Last Verified: Q2 2026*
+_Last Verified: Q2 2026_
 
 > Shotgun and bottom-up proteomics tools and resources. For intact-protein analysis see [Top-Down Proteomics](#top-down-proteomics); for computational analysis tools see also [Bioinformatics & Computational Tools](#bioinformatics--computational-tools).
+
+&#x1F4D6; _Workflow:_ [Label-Free DDA](workflows/label-free-dda.md)
 
 - [MaxQuant](https://maxquant.org/) - Suite for label-free, SILAC, and isobaric quantification from shotgun data, built on the Andromeda search engine. `[DDA]` `[Label-Free]` `[TMT]` `[SILAC]` `[GUI]` 🪟
 - [FragPipe](https://fragpipe.nesvilab.org/) - Graphical pipeline built on MSFragger for DDA, DIA, and labeling workflows. `[DDA]` `[DIA]` `[TMT]` `[GUI]`
@@ -288,7 +280,7 @@ Tags stack: a single entry can read `[DIA]` `[CLI]` 🐧 🪟. No platform emoji
 
 ## Top-Down Proteomics
 
-*Last Verified: Q2 2026*
+_Last Verified: Q2 2026_
 
 > Analysis of intact proteins and proteoforms without digestion, preserving PTMs, isoforms, and sequence variants. Complements the peptide-centric workflows under [Discovery Proteomics](#discovery-proteomics), and covers both denatured and native (complex-down) approaches.
 
@@ -310,24 +302,28 @@ Tags stack: a single entry can read `[DIA]` `[CLI]` 🐧 🪟. No platform emoji
 
 ## Quantitative Proteomics
 
-*Last Verified: Q2 2026*
+_Last Verified: Q2 2026_
 
 > DIA, targeted (SRM/PRM), and label-based quantification. Consolidates DIA and targeted approaches; will split via the [30/10 Rule](GOVERNANCE.md#the-3010-rule) when content density warrants it.
 
+&#x1F4D6; _Workflow:_ [Label-Free DDA](workflows/label-free-dda.md) &middot; [DIA Analysis](workflows/dia-analysis.md) _(planned)_
+
 ### DIA Tools
 
-- [DIA-NN](https://github.com/vdemichev/DiaNN) - Automated software for library-free and library-based DIA quantification using deep learning. `[DIA]` `[Label-Free]` `[CLI]` 🐧 🪟
-- [Spectronaut](https://biognosys.com/software/spectronaut/) - Commercial DIA analysis software supporting directDIA and spectral-library workflows. `[DIA]` `[GUI]` 💰
-- [OpenSWATH](https://openms.readthedocs.io/en/latest/tutorials/knime-user-tutorial/openswath.html) - Targeted analysis of DIA and SWATH-MS data within the OpenMS ecosystem. `[DIA]` `[CLI]`
+- [DIA-NN](https://github.com/vdemichev/DiaNN) - Automated software for library-free and library-based DIA quantification using deep learning. `[DIA]` `[Label-Free]` `[CLI]` 🐧 🪟 ([benchmark](https://doi.org/10.1021/acs.jproteome.1c00490))
+- [Spectronaut](https://biognosys.com/software/spectronaut/) - Commercial DIA analysis software supporting directDIA and spectral-library workflows. `[DIA]` `[GUI]` 💰 ([benchmark](https://doi.org/10.1021/acs.jproteome.1c00490))
+- [OpenSWATH](https://openms.readthedocs.io/en/latest/tutorials/knime-user-tutorial/openswath.html) - Targeted analysis of DIA and SWATH-MS data within the OpenMS ecosystem. `[DIA]` `[CLI]` ([benchmark](https://doi.org/10.1038/nbt.3685))
 - [EncyclopeDIA](https://bitbucket.org/searleb/encyclopedia) - Library search engine for DIA using chromatogram and DDA-based spectral libraries. `[DIA]` `[GUI]`
 - [DIAlignR](https://github.com/Roestlab/DIAlignR) - Retention time alignment across DIA, SWATH, PRM, and SRM runs for consistent quantification. `[DIA]` `[CLI]`
-- [DIA-Umpire](https://github.com/Nesvilab/DIA-Umpire) - Untargeted DIA analysis that generates pseudo-MS/MS spectra for conventional database searching. `[DIA]` `[CLI]`
+- [DIA-Umpire](https://github.com/Nesvilab/DIA-Umpire) - Untargeted DIA analysis that generates pseudo-MS/MS spectra for conventional database searching. `[DIA]` `[CLI]` ([benchmark](https://doi.org/10.1038/nbt.3685))
 
 ### Targeted / SRM / PRM
 
-- [Skyline](https://skyline.ms/) - Open-source environment for building and analyzing SRM, PRM, targeted, and DIA assays. `[Targeted]` `[DIA]` `[GUI]` 🪟
+- [Skyline](https://skyline.ms/) - Open-source environment for building and analyzing SRM, PRM, targeted, and DIA assays. `[Targeted]` `[DIA]` `[GUI]` 🪟 ([benchmark](https://doi.org/10.1038/nbt.3685))
 - [Panorama](https://panoramaweb.org/) - Web repository and dashboard for targeted proteomics data built on Skyline documents. `[Targeted]` `[API]`
 - [Avant-garde](https://github.com/SebVaca/Avant_garde) - Data-driven refinement of DIA and PRM signals by removing interfering transitions and scoring peaks. `[Targeted]` `[DIA]` `[CLI]`
+- [loqculate](https://github.com/eneskemalergin/loqculate) - Command-line calculator and Python library for limits of detection and quantitation (LoD/LoQ) from DIA and targeted calibration curves, reading DIA-NN, Spectronaut, Skyline, and EncyclopeDIA outputs. `[Targeted]` `[DIA]` `[CLI]` `[API]`
+- [matrix-matched_calcurves](https://github.com/lindsaypino/matrix-matched_calcurves) - Reference Python implementation of matrix-matched calibration curves for LOD/LOQ figures of merit, fitting a piecewise noise-plus-signal model with bootstrapped CV thresholds; the Pino 2020 method that loqculate reimplements ([paper](https://pubmed.ncbi.nlm.nih.gov/32037841/)). `[Targeted]` `[CLI]` 📦
 
 ### Label-Based Quantification (TMT, SILAC, iTRAQ)
 
@@ -344,11 +340,11 @@ Tags stack: a single entry can read `[DIA]` `[CLI]` 🐧 🪟. No platform emoji
 
 ## Post-Translational Modifications
 
-*Last Verified: Q2 2026*
+_Last Verified: Q2 2026_
 
 > Tools and resources organized by modification type. For unrestricted (open) modification discovery, see also the search engines under [Bioinformatics & Computational Tools](#bioinformatics--computational-tools).
 
-&#x1F4D6; *Guide:* [PTM Analysis Strategy](guides/ptm-analysis-strategy.md) *(planned)*
+&#x1F4D6; _Guide:_ [PTM Analysis Strategy](guides/ptm-analysis-strategy.md) _(planned)_
 
 ### Phosphoproteomics
 
@@ -398,14 +394,17 @@ Tags stack: a single entry can read `[DIA]` `[CLI]` 🐧 🪟. No platform emoji
 
 ## Single-Cell Proteomics
 
-*Last Verified: Q2 2026*
+_Last Verified: Q2 2026_
 
 > Tools and resources for single-cell and low-input proteomics. Entries require documentation and at least one published use case.
 
-&#x1F4D6; *Guide:* [Single-Cell Best Practices](guides/single-cell-best-practices.md) *(planned)*
+&#x1F4D6; _Guide:_ [Single-Cell Best Practices](guides/single-cell-best-practices.md) _(planned)_
 
 - [scp](https://bioconductor.org/packages/scp) - Bioconductor package for processing and analyzing mass spectrometry-based single-cell proteomics data. `[CLI]`
 - [SCeptre](https://github.com/bfurtwa/SCeptre) - Python package that extends Scanpy to analyze multiplexed single-cell proteomics data. `[CLI]`
+- [QFeatures](https://bioconductor.org/packages/QFeatures) - R/Bioconductor infrastructure for managing quantitative features across PSM, peptide, and protein levels; the data backbone the scp package builds on. `[API]`
+- [scpdata](https://bioconductor.org/packages/scpdata) - R/Bioconductor data package distributing standardized, annotated mass spectrometry single-cell proteomics datasets formatted with the scp structure. `[API]`
+- [DART-ID](https://github.com/SlavovLab/DART-ID) - Bayesian retention-time alignment that boosts confident peptide identifications in low-input and single-cell samples, increasing data points by 30-50% at 1% FDR. `[CLI]`
 - [SCP resources (Slavov Lab)](https://scp.slavovlab.net/) - Community hub for single-cell proteomics methods, protocols, datasets, and reporting guidelines.
 - [Single-Cell Proteomics Conference](https://single-cell.net/) - Annual conference with an open archive of recorded talks and community guidelines.
 - [Focus on single-cell proteomics (Nature Methods)](https://www.nature.com/collections/bdfhafhdeb) - Curated Nature Methods collection of articles on single-cell proteomics methods, challenges, and applications.
@@ -416,9 +415,11 @@ Tags stack: a single entry can read `[DIA]` `[CLI]` 🐧 🪟. No platform emoji
 
 ## Bioinformatics & Computational Tools
 
-*Last Verified: Q2 2026*
+_Last Verified: Q2 2026_
 
 > **The backbone of this list.** Computational tools for proteomics data analysis, organized by function. Capability tags help you find what works with your data and platform.
+
+&#x1F4D6; _Workflow:_ [Label-Free DDA](workflows/label-free-dda.md)
 
 **Essential tools** (see full entries in the relevant sections):
 
@@ -430,15 +431,15 @@ Tags stack: a single entry can read `[DIA]` `[CLI]` 🐧 🪟. No platform emoji
 <summary><b>Sub-section index</b> (click to expand)</summary>
 <br>
 
-| Sub-section                                      | What it covers                                     |
-| ------------------------------------------------ | -------------------------------------------------- |
-| [Identification](#identification)                | Search engines, spectral libraries, rescoring      |
-| [Quantification](#quantification)                | Label-free, isobaric, metabolic labeling tools     |
-| [Statistical Analysis](#statistical-analysis)    | Differential expression, imputation, normalization |
-| [Visualization](#visualization)                  | Plots, interactive dashboards, spectrum viewers    |
-| [Quality Control](#quality-control)              | Run monitoring, QC metrics, batch effects          |
-| [Pipelines & Frameworks](#pipelines--frameworks) | End-to-end analysis platforms                      |
-| [Cloud & HPC](#cloud--hpc)                       | nf-core, Galaxy, Nextflow/Snakemake tooling        |
+| Sub-section                                      | What it covers                                                                   |
+| ------------------------------------------------ | -------------------------------------------------------------------------------- |
+| [Identification](#identification)                | Search engines, spectral libraries, rescoring                                    |
+| [Quantification](#quantification)                | Label-free, isobaric, metabolic labeling tools                                   |
+| [Statistical Analysis](#statistical-analysis)    | Differential expression, imputation, normalization, batch correction, enrichment |
+| [Visualization](#visualization)                  | Plots, interactive dashboards, spectrum viewers                                  |
+| [Quality Control](#quality-control)              | Run monitoring, QC reports, raw-file diagnostics                                 |
+| [Pipelines & Frameworks](#pipelines--frameworks) | End-to-end analysis platforms                                                    |
+| [Cloud & HPC](#cloud--hpc)                       | nf-core, Galaxy, Nextflow/Snakemake tooling                                      |
 
 </details>
 
@@ -469,6 +470,13 @@ Tags stack: a single entry can read `[DIA]` `[CLI]` 🐧 🪟. No platform emoji
 - [msqrob2](https://bioconductor.org/packages/msqrob2) - Robust linear mixed model framework for differential abundance, including missing-data-aware workflows. `[CLI]`
 - [proDA](https://github.com/const-ae/proDA) - Differential abundance analysis with a probabilistic dropout model that handles missing values without imputation. `[CLI]`
 - [protti](https://github.com/jpquast/protti) - R package for quality control and analysis of bottom-up and LiP-MS data, working with output from Spectronaut, MaxQuant, Proteome Discoverer, and Skyline. `[CLI]`
+- [HarmonizR](https://github.com/HSU-HPC/HarmonizR) - R package for batch-effect correction across independent proteomics datasets; it splits the matrix into sub-matrices with enough overlap to run ComBat or limma despite missing values, then reassembles the corrected result ([paper](https://doi.org/10.1038/s41467-022-31007-x)). `[API]`
+- [HarmonizePy](https://github.com/LangeLab/HarmonizePy) - Pure-Python port of the HarmonizR approach (ComBat and limma) with structural-missingness handling, batch sorting, and blocking, validated against the R references and requiring no R runtime. `[CLI]` `[API]`
+- [SQuAPP](https://github.com/LangeLab/SQuAPP) - Shiny application for streamlined analysis and visual comparison across multiple levels of proteomics data (peptide, protein, and PTM). `[GUI]`
+- [QuEStVar](https://github.com/eneskemalergin/QuEStVar) - Python package for paired equivalence and difference testing across proteomics feature tables; it pairs a standard difference test with a TOST equivalence test so a non-significant result is reported as explicit equivalence rather than assumed, and adds CV filtering, multiple-testing correction, power analysis, and antler plots ([paper](https://doi.org/10.1021/acs.jproteome.4c00131)). `[CLI]` `[API]`
+- [ProteoForge](https://github.com/eneskemalergin/ProteoForge) - Python package for differential proteoform discovery from bottom-up proteomics, grouping peptides that diverge from their protein siblings into differential proteoform units through robust discordance modeling (RLM/WLS) and Ward clustering ([paper](https://doi.org/10.1021/acs.jproteome.5c01235)). `[API]`
+- [clusterProfiler](https://github.com/YuLab-SMU/clusterProfiler) - Enrichment and GSEA tool with visualization for interpreting protein and gene lists across many ontologies and species. `[API]`
+- [fgsea](https://bioconductor.org/packages/fgsea) - R/Bioconductor package for preranked gene set enrichment analysis that estimates low enrichment p-values using a multilevel Monte Carlo scheme. `[CLI]`
 
 ### Visualization
 
@@ -477,8 +485,6 @@ Tags stack: a single entry can read `[DIA]` `[CLI]` 🐧 🪟. No platform emoji
 - [PDV](https://github.com/wenbostar/PDV) - Graphical viewer for proteomics data including spectra, chromatograms, and identification results. `[GUI]`
 - [IPSA (Interactive Peptide Spectral Annotator)](https://github.com/coongroup/IPSA) - Web-based annotator that generates interactive, exportable visualizations of peptide tandem mass spectra. `[GUI]`
 - [ComplexHeatmap](https://github.com/jokergoo/ComplexHeatmap) - R/Bioconductor package for generating annotated heatmaps, applied to proteomics expression matrices. `[API]`
-- [clusterProfiler](https://github.com/YuLab-SMU/clusterProfiler) - Enrichment and GSEA tool with visualization for interpreting protein and gene lists across many ontologies and species. `[API]`
-- [fgsea](https://bioconductor.org/packages/fgsea) - R/Bioconductor package for preranked gene set enrichment analysis that estimates low enrichment p-values using a multilevel Monte Carlo scheme. `[CLI]`
 
 ### Quality Control
 
@@ -502,7 +508,7 @@ Tags stack: a single entry can read `[DIA]` `[CLI]` 🐧 🪟. No platform emoji
 ### Cloud & HPC
 
 - [nf-core/quantms](https://github.com/bigbio/quantms) - Nextflow pipeline for reproducible DDA-LFQ, TMT, and DIA-LFQ quantification at scale (active development at bigbio/quantms; the nf-core mirror is archived at 1.2.0). `[DIA]` `[TMT]` `[Label-Free]` `[CLI]` 📦
-- [Frag'n'Flow](https://doi.org/10.1186/s12859-025-06305-y) - Nextflow pipeline wrapping the FragPipe ecosystem for large-scale label-free DDA quantification (2026). `[DDA]` `[Label-Free]` `[CLI]` 📦
+- [Frag'n'Flow](https://github.com/ronalabrcns/FragNFlow) - Nextflow pipeline wrapping the FragPipe ecosystem for large-scale quantitative proteomics on HPC, cloud, and clusters, validated across label-free DDA, DIA, and TMT datasets ([paper](https://doi.org/10.1186/s12859-025-06305-y)). `[DDA]` `[DIA]` `[TMT]` `[Label-Free]` `[CLI]` 📦
 - [nf-core/proteomicslfq](https://github.com/nf-core/proteomicslfq) - OpenMS and MSstats label-free quantification pipeline; the predecessor to quantms, now largely superseded (DSL1). `[Label-Free]` `[CLI]` 📦
 - [snakemake-ms-proteomics](https://github.com/MPUSP/snakemake-ms-proteomics) - Snakemake pipeline for label-free DDA built on FragPipe and MSstats with automated quality control. `[DDA]` `[Label-Free]` `[CLI]` 📦
 - [Galaxy Proteomics (usegalaxy.eu)](https://proteomics.usegalaxy.eu/) - Dedicated European Galaxy proteomics server (Galaxy-P) hosting MS proteomics and proteogenomics tools and workflows that run in the browser without local installation. `[GUI]`
@@ -514,7 +520,7 @@ Tags stack: a single entry can read `[DIA]` `[CLI]` 🐧 🪟. No platform emoji
 
 ## AI & Machine Learning in Proteomics
 
-*Last Verified: Q2 2026*
+_Last Verified: Q2 2026_
 
 > Machine learning and deep learning applied to proteomics. Entries require a working repository with documentation.
 
@@ -531,7 +537,7 @@ Tags stack: a single entry can read `[DIA]` `[CLI]` 🐧 🪟. No platform emoji
 
 > Spectrum prediction (Prosit, Koina), retention time prediction, protein representation learning (ESM, ProtTrans), and AlphaFold integrations applied to MS data.
 
-&#x1F4D6; *Guide:* [AI/ML in Proteomics](guides/ai-ml-in-proteomics.md) *(planned)*
+&#x1F4D6; _Guide:_ [AI/ML in Proteomics](guides/ai-ml-in-proteomics.md) _(planned)_
 
 - [Koina](https://koina.wilhelmlab.org/) - Open service and API network that serves many proteomics ML models (Prosit, AlphaPeptDeep, and more) for prediction and rescoring. `[API]` 📦
 - [AlphaPeptDeep](https://github.com/MannLabs/alphapeptdeep) - Deep learning framework for building MS2, retention time, and collision cross section prediction models. `[CLI]` `[API]`
@@ -546,11 +552,11 @@ Tags stack: a single entry can read `[DIA]` `[CLI]` 🐧 🪟. No platform emoji
 
 ## Data Repositories & Standards
 
-*Last Verified: Q2 2026*
+_Last Verified: Q2 2026_
 
 > Public repositories, data standards, controlled vocabularies, and format specifications.
 
-&#x1F4D6; *Guides:* [File Format Cheat Sheet](guides/file-format-cheat-sheet.md) &middot; [Tool Compatibility Matrix](guides/compatibility-matrix.md)
+&#x1F4D6; _Guides:_ [File Format Cheat Sheet](guides/file-format-cheat-sheet.md) &middot; [Tool Compatibility Matrix](guides/compatibility-matrix.md)
 
 - [CPTAC / Proteomic Data Commons](https://pdc.cancer.gov/) - Repository for harmonized cancer proteogenomic datasets from the CPTAC program.
 - [HUPO-PSI Standards](https://www.psidev.info/) - Community data standards and controlled vocabularies (mzML, mzIdentML, mzTab, and more).
@@ -561,6 +567,8 @@ Tags stack: a single entry can read `[DIA]` `[CLI]` 🐧 🪟. No platform emoji
 - [PRIDE](https://www.ebi.ac.uk/pride/) - Repository for mass spectrometry proteomics data hosted at EMBL-EBI, and a founding member of the ProteomeXchange consortium.
 - [ProteomeXchange](http://www.proteomexchange.org/) - Consortium providing a single point of submission and access across major proteomics repositories.
 - [ProteoWizard](https://proteowizard.sourceforge.io/) - Cross-platform libraries and tools (including msconvert) for converting and processing raw vendor data. `[CLI]` `[GUI]` 🐧 🪟 🍎
+- [PXAudit](https://github.com/LangeLab/PXAudit) - Command-line tool that audits PRIDE dataset metadata, scoring each study on a 7-tier FAIR ladder and a separate quantification-readiness tier and writing results to a local SQLite database. `[CLI]`
+- [pxseek](https://github.com/LangeLab/pxseek) - Python command-line tool and library to query, filter, and retrieve dataset metadata from ProteomeXchange through its fetch, filter, and lookup commands, writing reusable summary tables for reproducible dataset shortlisting. `[CLI]` `[API]`
 - [ThermoRawFileParser](https://github.com/compomics/ThermoRawFileParser) - Cross-platform converter from Thermo raw files to open formats such as mzML and MGF. `[CLI]` 🐧 🪟 🍎
 
 <!-- More entries welcome. See CONTRIBUTING.md -->
@@ -569,7 +577,7 @@ Tags stack: a single entry can read `[DIA]` `[CLI]` 🐧 🪟. No platform emoji
 
 ## Protein Databases & Knowledge Bases
 
-*Last Verified: Q2 2026*
+_Last Verified: Q2 2026_
 
 > Protein sequence, structure, family, function, enzyme, pathway, interaction, disease, and proteoform databases. Includes general biological knowledge bases beyond proteomics that are widely used in proteomics research. For data submission and reanalysis repositories see [Data Repositories & Standards](#data-repositories--standards).
 
@@ -593,7 +601,7 @@ Tags stack: a single entry can read `[DIA]` `[CLI]` 🐧 🪟. No platform emoji
 - [CATH](https://www.cathdb.info/) - Classifies protein domain structures from the PDB into a hierarchy of class, architecture, topology, and homologous superfamily.
 - [DisProt](https://disprot.org/) - Curates experimentally validated intrinsically disordered proteins and regions with manual structural and functional annotations from the literature.
 - [MobiDB](https://mobidb.org/) - Annotates intrinsically disordered proteins and regions by combining curated annotations, indirect structural evidence, and sequence-based predictions.
-- [PDBe (Protein Data Bank in Europe)](https://www.ebi.ac.uk/pdbe/) - Provides the European wwPDB access point for macromolecular structures with search, analysis, and Mol* visualization services.
+- [PDBe (Protein Data Bank in Europe)](https://www.ebi.ac.uk/pdbe/) - Provides the European wwPDB access point for macromolecular structures with search, analysis, and Mol\* visualization services.
 - [RCSB Protein Data Bank (PDB)](https://www.rcsb.org/) - Provides the US access point to experimentally determined 3D structures of proteins, nucleic acids, and complexes archived by the wwPDB.
 - [SCOP](https://www.ebi.ac.uk/pdbe/scop/) - Classifies protein domains of known structure into families, superfamilies, and folds based on structural and evolutionary relationships.
 
@@ -656,7 +664,7 @@ Tags stack: a single entry can read `[DIA]` `[CLI]` 🐧 🪟. No platform emoji
 
 ## Multi-Omics Integration
 
-*Last Verified: Q2 2026*
+_Last Verified: Q2 2026_
 
 > Tools for integrating proteomics with genomics, transcriptomics, and metabolomics. Focus on proteomics-centric or proteomics-aware integrations.
 
@@ -668,7 +676,6 @@ Tags stack: a single entry can read `[DIA]` `[CLI]` 🐧 🪟. No platform emoji
 - [LinkedOmics](https://www.linkedomics.org/) - Web portal to access and correlate multi-omics data, including CPTAC proteomics, across TCGA and CPTAC cancer cohorts.
 - [muon](https://muon.scverse.org/) - Python framework built on the MuData structure for multimodal single-cell and multi-omics analysis. `[API]`
 - [mogsa](https://bioconductor.org/packages/mogsa) - R/Bioconductor package for multi-omics integrative clustering (moCluster) and single-sample multi-omics gene set analysis. `[CLI]`
-- [lipidr](https://bioconductor.org/packages/lipidr) - R/Bioconductor package for import, quality control, differential analysis, and visualization of targeted and untargeted lipidomics data. `[CLI]`
 
 <!-- More entries welcome. See CONTRIBUTING.md -->
 
@@ -676,7 +683,7 @@ Tags stack: a single entry can read `[DIA]` `[CLI]` 🐧 🪟. No platform emoji
 
 ## Frontier & Niche Techniques
 
-*Last Verified: Q2 2026*
+_Last Verified: Q2 2026_
 
 > Emerging and specialized proteomics approaches. Honest about sparsity; entries grow as fields mature.
 
@@ -690,6 +697,7 @@ Tags stack: a single entry can read `[DIA]` `[CLI]` 🐧 🪟. No platform emoji
 
 - [Galaxy-P](https://galaxyp.org/) - Galaxy-based multi-omics platform with workflows for building custom sequence databases and performing proteogenomic analysis. `[GUI]`
 - [customProDB](https://bioconductor.org/packages/customProDB) - R/Bioconductor package that builds customized protein databases from RNA-seq data for proteomics search. `[CLI]`
+- [ProteoDisco](https://bioconductor.org/packages/ProteoDisco) - R/Bioconductor package for building custom protein-variant databases from genomic variants, splice junctions, fusion genes, and manual transcript sequences for proteogenomic search ([paper](https://doi.org/10.1093/bioinformatics/btab809)). `[API]`
 - [Spritz](https://smith-chem-wisc.github.io/Spritz/) - Software that builds sample-specific proteoform databases annotated with sequence variants and PTMs from RNA-seq data. `[GUI]` 🪟
 
 ### Other Emerging Approaches
@@ -704,9 +712,19 @@ Tags stack: a single entry can read `[DIA]` `[CLI]` 🐧 🪟. No platform emoji
 
 **[&uarr; Back to Contents](#contents)**
 
+## Deprecated & Legacy
+
+> Tools and resources that have been superseded by newer versions, archived, or are no longer actively maintained. Kept as a stable home for migration notes and successor pointers; entries are added when the list goes public.
+
+<!-- Entries added at public launch. See CONTRIBUTING.md -->
+
+**[&uarr; Back to Contents](#contents)**
+
+---
+
 ## Community & Organizations
 
-*Last Verified: Q2 2026*
+_Last Verified: Q2 2026_
 
 > Professional societies, community channels, conferences, and organizations.
 
@@ -723,16 +741,6 @@ Tags stack: a single entry can read `[DIA]` `[CLI]` 🐧 🪟. No platform emoji
 > See also the [Consortium for Top-Down Proteomics](#top-down-proteomics), listed under Top-Down Proteomics.
 
 <!-- More entries welcome. See CONTRIBUTING.md -->
-
-**[&uarr; Back to Contents](#contents)**
-
-## Deprecated / Legacy
-
-> Tools that are no longer maintained but were historically important. Each entry includes what replaced it and why it mattered. See [CONTRIBUTING.md](CONTRIBUTING.md) for the obituary format.
-
-<!-- Format: ~~[Tool Name](url)~~ - Superseded by [Successor](url). Original contribution: X. Last usable version: vN.N (YYYY). -->
-
-- ~~[PGA](https://github.com/wenbostar/PGA)~~ - Superseded by [customProDB](https://bioconductor.org/packages/customProDB) and [ProteoDisco](https://bioconductor.org/packages/ProteoDisco). Original contribution: an R/Bioconductor proteogenomics package that built customized protein databases from RNA-seq data with integrated database searching, post-processing, and report generation. Last available in Bioconductor 3.11 (2020) and removed from Bioconductor 3.12; last GitHub release v1.9.1 (2017).
 
 **[&uarr; Back to Contents](#contents)**
 
