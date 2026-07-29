@@ -87,6 +87,7 @@ _Inclusion does not constitute endorsement. Commercial tools are marked with �
   - [Other Emerging Approaches](#other-emerging-approaches)
 - [Deprecated \& Legacy](#deprecated--legacy)
 - [Community \& Organizations](#community--organizations)
+- [Research Labs \& Software Portals](#research-labs--software-portals)
 - [Guides \& Workflows](#guides--workflows)
 - [Contributing](#contributing)
 - [License](#license)
@@ -161,6 +162,7 @@ _Last Verified: Q2 2026_
 - [May Institute](https://computationalproteomics.khoury.northeastern.edu/) - Annual Northeastern University program on computation and statistics for MS-based proteomics with hands-on open-source tool training.
 - [Broad Institute Proteomics Tutorials and Workshops](https://www.broadinstitute.org/proteomics/tutorials-and-workshops) - Tutorials and workshop materials on proteomics technologies and methods from the Broad Proteomics Platform.
 - [Proteomics Academy](https://www.proteomics-academy.org/) - Free educational materials and a community Q&A forum maintained by EuBIC-MS and the EuPA education committee.
+- [ProteomicsML](https://proteomicsml.org/) - Community-curated ML-ready proteomics datasets and tutorials spanning peptide RT, fragmentation, ion mobility, and detectability prediction ([paper](https://doi.org/10.1021/acs.jproteome.2c00629)).
 - [CompOmics Lectures](https://www.youtube.com/playlist?list=PLXxp6nsBenSX_W8DiOocKJ0laNauYNdYl) - Video lecture series from the CompOmics group covering mass spectrometry and computational proteomics fundamentals.
 
 ### Books
@@ -225,11 +227,13 @@ _Last Verified: Q2 2026_
 - [XL-Ranker](https://github.com/bzhanglab/xlranker) - Parsimony plus XGBoost workflow that resolves ambiguous cross-linked peptide mappings into prioritized PPIs ([preprint](https://doi.org/10.1101/2025.07.18.665625)). `[CLI]` `[API]` 🧪
 - [xiSEARCH](https://www.rappsilberlab.org/software/xisearch/) - Search engine for cross-linked peptides supporting cleavable and non-cleavable cross-linkers, paired with the xiVIEW visualization tool. `[GUI]`
 - [xlms (decoy-free FDR)](https://github.com/shawn-peng/xlms) - Decoy-free FDR estimation for XL-MS/MS via skew-normal mixture modeling of ranked cross-link PSM scores ([paper](https://doi.org/10.1093/bioinformatics/btae233)). `[CLI]`
+- [RawVegetable 2.0](https://github.com/loukurt/RawVegetable2) - Windows QC toolkit for XL-MS acquisition (cleavable doublet Pair Finder, reporter-ion diagnostics, precursor signal ratio, Xrea spectral quality); v2.1.2 ([paper](https://doi.org/10.1021/acs.jproteome.3c00791)). `[GUI]` 🪟
 - [MeroX](https://www.stavrox.com/) - Software for identifying cross-linked peptides from MS-cleavable and non-cleavable cross-linkers. `[GUI]`
 - [Kojak](https://www.kojak-ms.org/) - Open-source algorithm for identifying cross-linked peptides from tandem mass spectra. `[CLI]`
 - [Deuteros 2.0](https://github.com/andymlau/Deuteros_2.0) - Open-source tool for processing, statistical analysis, and visualization of differential HDX-MS data. `[GUI]`
 - [PyHDX](https://github.com/Jhsmit/PyHDX) - Python tool that derives residue-level protection factors and free energies from HDX-MS data. `[CLI]` `[API]`
 - [TPP (Thermal Proteome Profiling)](https://bioconductor.org/packages/TPP) - R/Bioconductor package for analyzing thermal proteome profiling experiments across temperature or concentration ranges, including the NPARC model. `[CLI]`
+- [InflectSSP](https://cran.r-project.org/web/packages/InflectSSP/) - R package (CRAN 1.6) for melt-curve fitting and melt-shift statistics in MS-CETSA / thermal proteome profiling ([paper](https://doi.org/10.1016/j.mcpro.2023.100630)). `[CLI]`
 - [mineCETSA](https://github.com/nkdailingyun/mineCETSA) - R package for processing and visualizing proteome-wide MS-CETSA target-engagement data. `[CLI]`
 - [MSstatsLiP](https://bioconductor.org/packages/MSstatsLiP) - R/Bioconductor package for statistical analysis of limited proteolysis (LiP-MS) experiments at peptide and protein level. `[CLI]`
 - [FLiPPR](https://github.com/FriedLabJHU/FragPipe-Limited-Proteolysis-Processor) - FragPipe post-processor for LiP-MS with LiP-aware imputation, data merging, and protein-centric multiple-hypothesis correction (flippr 0.3.0) ([paper](https://doi.org/10.1021/acs.jproteome.3c00887)). `[CLI]` `[API]`
@@ -238,8 +242,12 @@ _Last Verified: Q2 2026_
 - [AlphaTims](https://github.com/MannLabs/alphatims) - Python package for fast access and visualization of Bruker timsTOF ion-mobility (TIMS-TOF) raw data. `[CLI]` `[API]`
 - [pRoloc](https://bioconductor.org/packages/pRoloc) - R/Bioconductor framework using machine learning to assign proteins to subcellular compartments in spatial proteomics experiments, with the pRolocGUI visualization app. `[CLI]`
 - [PEELing](https://github.com/JaneliaSciComp/peeling/) - Python package and web service for spatially resolved / proximity-labeling proteomics QC, contaminant cutoff, annotation, and visualization ([paper](https://doi.org/10.1093/bioinformatics/btaf439)). `[CLI]` `[GUI]` `[API]`
+- [Veneer](https://www.cellsurfer.net/veneer) - Webtool for standardized curation, localization scoring, and reporting of mammalian cell-surface N-glycocapture / µCSC MS datasets ([paper](https://doi.org/10.1021/acs.jproteome.3c00800)). `[GUI]`
+- [SPAT](https://spat.leucegene.ca/) - Surface Protein Annotation Tool (v3.4) that scores proteins for plasma-membrane likelihood to help filter contaminants in surfaceome MS lists ([preprint](https://doi.org/10.1101/2023.07.07.547075)). `[GUI]` 🧪
 - [OpenDVP](https://github.com/CosciaLab/openDVP) - Open-source deep visual proteomics framework linking imaging (QuPath/Napari/MCMICRO) with SpatialData/AnnData and label-free proteomics ([preprint](https://doi.org/10.1101/2025.07.13.662099)). `[CLI]` `[API]` 🧪
 - [AnnoSpat](https://github.com/faryabiLab/AnnoSpat) - Neural-network cell-type annotation and point-process spatial patterning for imaging mass cytometry (IMC) and CODEX spatial proteomics ([paper](https://doi.org/10.1038/s41467-024-47334-0)). `[CLI]` `[API]`
+- [SpatialSort](https://github.com/Roth-Lab/SpatialSort) - Spatially aware Bayesian clustering and prior-guided cell-type annotation for imaging spatial proteomics (e.g. IMC) ([paper](https://doi.org/10.1093/bioinformatics/btad242)). `[CLI]`
+- [SPOT](https://github.com/sarahsamorodnitsky/SPOT) - R omnibus test relating multiplexed imaging spatial-proteomics cell clustering (Ripley/Besag across radii) to clinical outcomes without pre-choosing a single radius ([paper](https://doi.org/10.1093/bioinformatics/btae425)). `[CLI]`
 - [Corona](https://github.com/SchweppeLab/Corona) - Virtual mass spectrometer that replays scans in real time over Thermo IAPI / Helios so developers can build and test real-time MS instrument apps without hardware. `[GUI]` 🪟
 
 > Native and intact-protein MS deconvolution is covered by UniDec under [Top-Down Proteomics](#top-down-proteomics); diaPASEF ion-mobility DIA is supported within [FragPipe](#discovery-proteomics) and [DIA-NN](#dia-tools).
@@ -301,9 +309,10 @@ _Last Verified: Q2 2026_
 
 > Analysis of intact proteins and proteoforms without digestion, preserving PTMs, isoforms, and sequence variants. Complements the peptide-centric workflows under [Discovery Proteomics](#discovery-proteomics), and covers both denatured and native (complex-down) approaches.
 
-- [TopPIC Suite](https://www.toppic.org/) - Open-source suite (TopFD, TopPIC, TopMG, TopDiff, TopDIA) for proteoform identification, characterization, and quantification from top-down data. `[DDA]` `[DIA]` `[CLI]` `[GUI]`
+- [TopPIC Suite](https://www.toppic.org/) - Open-source suite (TopFD, TopPIC, TopMG, TopDiff, TopDIA) for proteoform identification, characterization, and quantification from top-down DDA/DIA data; TopDIA demultiplexes TD-DIA into pseudo-MS/MS for TopPIC/TopMG (v1.8.1; [TopDIA paper](https://doi.org/10.1021/acs.jproteome.4c00293)). `[DDA]` `[DIA]` `[CLI]` `[GUI]`
 - [TopLib](https://github.com/toppic-suite/toplib) - Builds and searches top-down mass spectral libraries (TopFD/TopPIC → SQLite) for faster, more reproducible proteoform identification ([paper](https://doi.org/10.1021/acs.analchem.4c06627)). `[CLI]`
 - [TopMGQuant](https://github.com/Zeirdo/TopMGQuant) - Alignment-graph method to identify and relatively quantify multiple proteoforms from a single top-down MS/MS spectrum ([paper](https://doi.org/10.1093/bioinformatics/btaf007)). `[CLI]`
+- [TopMGFast](https://github.com/Zeirdo/TopMGFast) - Faster peak-error correction for spectrum–proteoform mass-graph alignment in top-down proteoform identification ([paper](https://doi.org/10.1093/bioinformatics/btae149)). `[CLI]`
 - [TopRepo](https://github.com/toppic-suite/toprepo) - Top-down spectral repository (>18M MS/MS spectra from 12 species; curated library >5M annotated) for pan-dataset analysis, library search, and DL spectral prediction ([preprint](https://doi.org/10.64898/2026.02.20.707032)). 🧪
 - [Informed-Proteomics (MSPathFinder)](https://github.com/PNNL-Comp-Mass-Spec/Informed-Proteomics) - Open-source package with ProMex feature finding and the MSPathFinder database search engine for top-down LC-MS/MS. `[CLI]` 🪟
 - [MASH Explorer](https://labs.wisc.edu/gelab/MASH_Explorer/index.php) - Free environment integrating multiple deconvolution and search algorithms for denatured and native top-down proteomics. `[GUI]` 🪟
@@ -313,10 +322,13 @@ _Last Verified: Q2 2026_
 - [UniDec](https://github.com/michaelmarty/UniDec) - Bayesian deconvolution of intact-mass and ion-mobility spectra for native MS and intact protein analysis. `[GUI]` `[API]`
 - [Theropod](https://github.com/clelandtp/Theropod) - STORI analysis tools for externally collected Orbitrap transients enabling charge-detection / individual-ion proteoform mass spectra ([paper](https://doi.org/10.1021/jasms.5c00328)). `[CLI]`
 - [MSModDetector](https://github.com/marjanfaizi/MSModDetector) - Detects and quantifies intact-protein mass shifts from individual-ion MS (I2MS) and infers candidate PTM patterns via linear programming ([paper](https://doi.org/10.1093/bioinformatics/btae335)). `[CLI]` `[API]`
+- [IsoForma](https://github.com/EMSL-Computing/isoforma-lib) - R package for relative quantification and visualization of proteoform positional isomers from top-down LC-MS/MS fragment patterns ([paper](https://doi.org/10.1021/acs.jproteome.3c00681)). `[CLI]`
 - [ClipsMS](https://github.com/loolab2020/ClipsMS) - Algorithm for assigning both terminal and internal fragment ions in top-down mass spectra to localize modifications along the protein sequence. `[CLI]`
 - [Proteo-SAFARI](https://github.com/mblanzillotti/Proteo-SAFARI) - R/Shiny app for m/z-domain fragment-ion assignment from intact-protein MS/MS (including UVPD hydrogen-shift fitting) ([paper](https://doi.org/10.1021/acs.jproteome.4c00607)). `[GUI]`
 - [FLASHDeconv](https://openms.de/FLASHDeconv) - Ultrafast OpenMS tool for MS1/MS2 top-down spectral and feature deconvolution with TopPIC-compatible outputs ([paper](https://doi.org/10.1016/j.cels.2020.01.003)). `[CLI]` `[GUI]`
+- [FLASHQuant](https://www.openms.org/applications/flashquant/) - OpenMS MS1 label-free quantification for top-down proteoforms that resolves coeluting overlapping signals (FLASHQuantWizard; multi-run ConsensusFeatureGroupDetector) ([paper](https://doi.org/10.1021/acs.analchem.4c03117)). `[Label-Free]` `[CLI]` `[GUI]`
 - [FLASHApp](https://www.openms.org/FLASHApp/) - OpenMS web app for interactive top-down analysis and visualization wrapping FLASHDeconv and FLASHTnT workflows ([paper](https://doi.org/10.1002/pmic.70042)). `[GUI]`
+- [TopDownApp](https://github.com/mwalzer/TopDownApp) - Containerized modular platform for top-down deconvolution, identification, and visualization using open formats (mzML/mzTab) ([paper](https://doi.org/10.1002/pmic.202200403)). `[GUI]` 📦
 - [TDEase](https://github.com/Computational-TDMS/TDEase) - TopPIC-oriented TDP framework with TDPipe processing and TDVis/TDVisWeb interactive proteoform visualization ([paper](https://doi.org/10.1002/pmic.70031)). `[GUI]` `[CLI]`
 - [Proteoform-predictor](https://github.com/Tao-su/Proteoform-predictor) - Homology-based PTM-site transfer to expand proteoform search databases for top-down analysis of poorly annotated species ([paper](https://doi.org/10.1021/acs.jproteome.4c00943)). `[CLI]`
 - [Consortium for Top-Down Proteomics (CTDP)](https://ctdp.org/) - Nonprofit community advancing proteoform analysis, standards, the Human Proteoform Project, and the Proteoform Atlas data repository.
@@ -339,21 +351,26 @@ _Last Verified: Q2 2026_
 - [Spectronaut](https://biognosys.com/software/spectronaut/) - Commercial DIA analysis software supporting directDIA and spectral-library workflows. `[DIA]` `[GUI]` 💰 ([benchmark](https://doi.org/10.1021/acs.jproteome.1c00490))
 - [OpenSWATH](https://openms.readthedocs.io/en/latest/tutorials/knime-user-tutorial/openswath.html) - Targeted analysis of DIA and SWATH-MS data within the OpenMS ecosystem. `[DIA]` `[CLI]` ([benchmark](https://doi.org/10.1038/nbt.3685))
 - [EncyclopeDIA](https://bitbucket.org/searleb/encyclopedia) - Library search engine for DIA using chromatogram and DDA-based spectral libraries. `[DIA]` `[GUI]`
+- [nf-encyclopedia](https://github.com/TalusBio/nf-encyclopedia) - Cloud-ready Nextflow pipeline connecting MSConvert, EncyclopeDIA, and MSstats for DIA with or without gas-phase-fractionated chromatogram libraries (v1.1.0) ([paper](https://doi.org/10.1021/acs.jproteome.2c00613)). `[DIA]` `[CLI]` 📦
 - [Carafe2](https://github.com/Noble-Lab/Carafe) - Deep learning tool that builds experiment-specific in silico spectral libraries by fine-tuning RT, fragment intensity, and (for timsTOF) ion mobility models on DIA data, including native Bruker .d ([preprint](https://doi.org/10.64898/2026.03.27.714846)). `[DIA]` `[CLI]` 🧪
 - [Pioneer](https://github.com/nwamsley1/Pioneer.jl) - Fast Julia CLI for spectrum-centric DIA identification and quantification with isolation-window–aware re-isotoping of Altimeter/Koina predicted libraries ([preprint](https://doi.org/10.64898/2026.02.16.706201)). `[DIA]` `[CLI]` 🧪
 - [Disc-Hub](https://github.com/yuyiwen-yiyuwen/Disc_Hub) - Python package for benchmarking DIA target–decoy ML strategies (semi/fully supervised/k-fold × LDA/SVM/XGBoost/MLP) ([paper](https://doi.org/10.1093/bioadv/vbaf232)). `[DIA]` `[CLI]` `[API]`
 - [DIAlignR](https://github.com/Roestlab/DIAlignR) - Retention time alignment across DIA, SWATH, PRM, and SRM runs for consistent quantification. `[DIA]` `[CLI]`
 - [Calib-RT](https://github.com/chenghui03/Calib_RT) - Engine-independent nonlinear peptide retention-time calibration for DIA spectral libraries (PyPI: pycalib-rt) ([paper](https://doi.org/10.1093/bioinformatics/btae417)). `[DIA]` `[CLI]` `[API]`
+- [DIALib-QC](https://swathatlas.org/DIALibQC.php) - Assesses and repairs DIA/SWATH spectral ion libraries (PeakView, OpenSWATH, Spectronaut, Prosit) across 62 QC metrics; online via SWATHAtlas or local Perl (v1.2) ([paper](https://doi.org/10.1038/s41467-020-18901-y)). `[DIA]` `[CLI]`
 - [STAVER](https://github.com/Ran485/STAVER) - Uses standardized reference DIA datasets to reduce non-biological variation and noise in large-scale hybrid spectral-library DIA quantification ([paper](https://doi.org/10.1093/bib/bbae553)). `[DIA]` `[CLI]`
 - [DIA-Umpire](https://github.com/Nesvilab/DIA-Umpire) - Untargeted DIA analysis that generates pseudo-MS/MS spectra for conventional database searching. `[DIA]` `[CLI]` ([benchmark](https://doi.org/10.1038/nbt.3685))
 
 ### Targeted / SRM / PRM
 
 - [Skyline](https://skyline.ms/) - Open-source environment for building and analyzing SRM, PRM, targeted, and DIA assays. `[Targeted]` `[DIA]` `[GUI]` 🪟 ([benchmark](https://doi.org/10.1038/nbt.3685))
+- [DIGEST](https://digest.raylab.iiitd.edu.in/) - Web tool for de novo MRM transition / unique-ion-signature design from protein sequences with PTM and interference checks ([preprint](https://doi.org/10.1101/2023.11.27.568790)). `[Targeted]` `[GUI]` 🧪
 - [Panorama](https://panoramaweb.org/) - Web repository and dashboard for targeted proteomics data built on Skyline documents. `[Targeted]` `[API]`
 - [Avant-garde](https://github.com/SebVaca/Avant_garde) - Data-driven refinement of DIA and PRM signals by removing interfering transitions and scoring peaks. `[Targeted]` `[DIA]` `[CLI]`
 - [MsTargetPeaker](https://github.com/chiyang/MsTargetPeaker) - Quality-aware MRM/PRM peak picking via deep reinforcement learning and Monte Carlo tree search, with Skyline-compatible boundaries and diagnostic reports ([paper](https://doi.org/10.1016/j.mcpro.2026.101523)). `[Targeted]` `[CLI]`
 - [ProPickML](https://github.com/Ellcoy/ProPickML) - XGBoost peak picking for label-free SRM chromatograms, aimed at reducing manual validation versus mProphet-style scoring ([paper](https://doi.org/10.1021/acs.jproteome.4c00689)). `[Targeted]` `[CLI]`
+- [HeapMS](https://github.com/ccllabe/HeapMS) - CNN peak picking for Skyline MRM chromatograms via light/heavy 2D heatmaps, with auto/uncertain/delete triage ([web](http://ccllab.cgu.edu.tw:58132/); [paper](https://doi.org/10.1021/acs.analchem.3c01011)). `[Targeted]` `[GUI]`
+- [PeakPerformance](https://github.com/JuBiotech/peak-performance) - Bayesian MCMC fitting of targeted LC-MS/MS chromatographic peaks with model selection and uncertainty-aware acceptance metrics (v0.7.3) ([paper](https://doi.org/10.21105/joss.07313)). `[Targeted]` `[CLI]` `[API]`
 - [loqculate](https://github.com/eneskemalergin/loqculate) - Command-line calculator and Python library for limits of detection and quantitation (LoD/LoQ) from DIA and targeted calibration curves, reading DIA-NN, Spectronaut, Skyline, and EncyclopeDIA outputs. `[Targeted]` `[DIA]` `[CLI]` `[API]`
 - [matrix-matched_calcurves](https://github.com/lindsaypino/matrix-matched_calcurves) - Reference Python implementation of matrix-matched calibration curves for LOD/LOQ figures of merit, fitting a piecewise noise-plus-signal model with bootstrapped CV thresholds; the Pino 2020 method that loqculate reimplements ([paper](https://pubmed.ncbi.nlm.nih.gov/32037841/)). `[Targeted]` `[CLI]` 📦
 
@@ -385,10 +402,12 @@ _Last Verified: Q2 2026_
 
 - [PhosphoSitePlus](https://www.phosphosite.org/) - Curated knowledge base of experimentally observed phosphorylation, acetylation, ubiquitination, and methylation sites in human, mouse, and rat; free for academic and commercial use.
 - [EPSD 2.0](http://epsd.biocuckoo.cn/) - Eukaryotic phosphorylation site database (~2.77M experimental p-sites in 223 species) with functional annotations and phosphopeptide provenance ([paper](https://doi.org/10.1093/gpbjnl/qzaf057)).
+- [Nphos](http://www.bio-add.org/Nphos/) - Database and predictor of protein N-phosphorylation (pHis/pLys/pArg; ~11.7k experimental sites across 39 species) ([paper](https://doi.org/10.1093/gpbjnl/qzae032)). `[GUI]`
 - [LuciPHOr2](http://luciphor2.sourceforge.net/) - Target-decoy site localization for generic modifications with false localization rate estimation from tandem MS data. `[CLI]`
 - [onsite](https://github.com/bigbio/onsite) - Python package for phosphosite localization (AScore, PhosphoRS, LuciPHOr2/pyLucXor) with alanine-decoy false localization rate estimation; integrated with quantms ([preprint](https://doi.org/10.64898/2026.07.08.737157)). `[CLI]` `[API]` 🧪
 - [DeepMS2-phospho](https://github.com/lmsac/DeepMS2-phospho) - Deep learning prediction of phosphopeptide fragment spectra for spectral matching-based site localization. `[CLI]`
 - [PhosSight](https://github.com/YiCITI/PhosSight) - Deep learning phosphoproteomics framework (PhosDetect BiGRU detectability) for DDA rescoring/site localization and DIA library pruning ([paper](https://doi.org/10.1002/advs.75856)). `[CLI]` `[API]`
+- [DeepRescore2](https://github.com/bzhanglab/DeepRescore2) - Deep learning RT and fragment-intensity prediction workflow that rescores PSMs and improves phosphosite localization in shotgun phosphoproteomics ([paper](https://doi.org/10.1016/j.mcpro.2023.100707)). `[CLI]`
 - [PhosMap](https://github.com/liuzan-info/PhosMap) - Interactive platform for quantitative phosphoproteomics (QC, DE, kinase activity, motifs, survival) from MaxQuant, Spectronaut, and DIA-NN ([paper](https://doi.org/10.1016/j.compbiomed.2024.108391)). `[GUI]` `[CLI]` 📦
 - [RokaiXplorer](https://rokai.io/explorer/) - Interactive web/Shiny tool for proteomics and phosphoproteomics (DE, kinase inference via RoKAI, enrichment, deployable data browsers) ([paper](https://doi.org/10.1093/bioadv/vbae077)). `[GUI]`
 - [sitereport (msproteomics)](https://github.com/tvpham/msproteomics) - MaxLFQ site- and peptide-level reporting from DIA-NN/Spectronaut phosphoproteomics outputs ([paper](https://doi.org/10.1093/bioinformatics/btae432)). `[DIA]` `[CLI]` `[API]`
@@ -398,6 +417,7 @@ _Last Verified: Q2 2026_
 - [KSEA App](https://github.com/casecpb/KSEA) - Kinase-Substrate Enrichment Analysis to infer changes in kinase activity from phosphoproteomics data; non-commercial use. `[CLI]`
 - [KEA3](https://maayanlab.cloud/kea3/) - Web tool inferring upstream kinases whose putative substrates are enriched in a query protein or phosphoprotein list. `[API]`
 - [PTM-SEA](https://github.com/broadinstitute/ssGSEA2.0) - PTM Signature Enrichment Analysis that scores site-level signatures from the PTMsigDB database. `[CLI]`
+- [PTMNavigator](https://www.proteomicsdb.org/analytics/ptmNavigator) - ProteomicsDB interactive viewer that overlays differential PTM (esp. phosphoproteomics) data on ~3,000 pathway diagrams with kinase/pathway enrichment ([paper](https://doi.org/10.1038/s41467-024-55533-y)). `[GUI]`
 
 ### Glycoproteomics
 
@@ -418,11 +438,14 @@ _Last Verified: Q2 2026_
 - [StrucGAP](https://github.com/Sun-GlycoLab/StrucGAP) - Python platform for downstream structural and site-specific glycoproteomics analysis, covering preprocessing, quantification, network visualization, and annotation across multiple search engines. `[CLI]` `[API]`
 - [Byonic](https://www.proteinmetrics.com/products/byonic) - Commercial search engine for peptide, protein, and glycopeptide identification supporting wide PTM searches. `[GUI]` 💰
 - [pGlycoQuant](https://github.com/Power-Quant/pGlycoQuant) - Quantification tool for intact glycopeptides that works with pGlyco3 and other search results. `[CLI]`
+- [DeepGlyco](https://github.com/yyi17/DeepGlyco) - Deep learning prediction of intact-glycopeptide MS/MS (and iRT) for DIA spectral libraries and GPSM rescoring ([paper](https://doi.org/10.1038/s41467-024-46771-1)). `[DIA]` `[CLI]`
 - [GlyTouCan](https://glytoucan.org/) - International glycan structure repository that assigns globally unique accession numbers to registered glycans.
+- [GPnotebook (Glycoprotein-Notebook)](https://www.biomarkercenter.org/gpnotebook) - Pan-cancer CPTAC intact glycopeptide MS resource and analysis toolkit (~90k N-glycopeptides across 10 tumor types) with Python notebooks ([paper](https://doi.org/10.1016/j.mcpro.2025.101089)). `[GUI]` `[CLI]`
 - [GlyConnect](https://glyconnect.expasy.org/) - Database of glycosylation sites, glycan structures, and associated proteins on the SIB ExPASy portal.
 - [DQGlyco explorer](https://apps.embl.de/glycoapp/) - Interactive browser for deep quantitative N-glycoproteomics mouse and human datasets from the DQGlyco study ([paper](https://doi.org/10.1038/s41594-025-01485-w)). `[GUI]`
 - [GlyGen](https://www.glygen.org/) - Integrated knowledge base unifying glycan, glycoprotein, and glycosylation data from multiple sources.
-- [GlyCosmos](https://glycosmos.org/) - Web portal integrating glycan structures, glycogenes, glycoproteins, pathways, and related repositories.
+- [GlyCosmos](https://glycosmos.org/) - Glycoscience portal (v4.5.0) integrating glycan structures, glycogenes, glycoproteins, pathways, and related repositories ([v4 paper](https://doi.org/10.1007/s00216-024-05692-0)).
+- [GlyComb](https://glycomb.glycosmos.org/) - FAIR glycoconjugate repository that assigns stable IDs to glycopeptide/glycoprotein + GlyTouCan glycan sets and links GlyCosmos / GlyTouCan / GlycoPOST ([paper](https://doi.org/10.1016/j.jbc.2023.105624)).
 - [GlycoEnzDB](https://www.virtualglycome.org/glycoenzdb/) - Database of ~403 human glycosylation enzymes (GlycoEnzOnto) with pathway maps, expression, and CRISPR aids ([paper](https://doi.org/10.1093/glycob/cwaf074)).
 
 > Glyco workflows are also built into [FragPipe](#discovery-proteomics) (MSFragger-Glyco) and [MetaMorpheus](#pipelines--frameworks) (O-Pair Search).
@@ -432,6 +455,7 @@ _Last Verified: Q2 2026_
 > Open-search modification characterization and cross-modification reference databases.
 
 - [PTM-Shepherd](https://github.com/Nesvilab/PTM-Shepherd) - Characterizes and summarizes PTM profiles from open searches using localization, spectral similarity, retention time, and modification rates. `[CLI]`
+- [ReCom](https://github.com/CNIC-Proteomics/ReCom) - Comet-based semi-supervised ultra-tolerant open search that rescores modified-peptide candidates using Unimod delta-mass priors (Comet-ReCom v1.0.0) ([paper](https://doi.org/10.1016/j.jprot.2023.104968)). `[DDA]` `[CLI]`
 - [OpenSpec](https://github.com/BUAA-LiuLab/OpenSpec) - Windows GUI workflow that deconvolutes Orbitrap Astral DIA into pseudo-MS/MS spectra for DDA open search of unexpected modifications ([paper](https://doi.org/10.1021/acs.analchem.5c03055)). `[DIA]` `[GUI]` 🪟
 - [rDeamidation](https://github.com/tsutatsuta/rdeamidation) - R port of MaxQuant evidence-based N/Q deamidation rate calculation with bootstrap confidence intervals (useful for paleoproteomics and sample QC). `[CLI]`
 - [MSstatsPTM](https://bioconductor.org/packages/MSstatsPTM) - R/Bioconductor package for statistical analysis of PTM-site abundance that adjusts for changes in overall protein levels, supporting DDA, DIA, SRM, and TMT data. `[CLI]`
@@ -440,6 +464,7 @@ _Last Verified: Q2 2026_
 - [CysNet](https://github.com/JamesCobley/CysNet) - Infers cysteine redox proteoform (oxiform) constraints from bottom-up redox MS site marginals with optional copy-number scaling ([preprint](https://doi.org/10.64898/2026.07.06.736853)). `[CLI]` `[GUI]` `[API]` 🧪
 - [CysDB](https://backuslab.shinyapps.io/cysdb/) - Curated human cysteine chemoproteomics atlas (~62k sites from nine quantitative MS studies) with ligandability, reactivity, and disease annotations ([paper](https://doi.org/10.1016/j.chembiol.2023.04.004)). `[GUI]`
 - [dbPTM](https://biomics.lab.nycu.edu.tw/dbPTM/) - Integrated database of experimentally verified and predicted PTM sites with functional and structural annotation.
+- [FLAMS](https://github.com/hannelorelongin/FLAMS) - CLI/web tool to check novelty and cross-species conservation of PTM sites against CPLM, dbPTM, and SCOP3P at residue resolution (v1.1.7; [web](https://www.biw.kuleuven.be/m2s/cmpg/research/CSB/tools/flams/)) ([paper](https://doi.org/10.1093/bioinformatics/btae005)). `[CLI]` `[GUI]`
 - [O-GlcNAcAtlas](https://oglcnac.org/atlas/) - Curated database of experimentally identified protein O-GlcNAc sites with site-specific quantification across species and conditions ([paper](https://doi.org/10.1016/j.jmb.2025.169033)).
 - [StrucPTM](https://github.com/HanyangBISLab/StrucPTM) - Database of PTM residues validated at atom level in PDB structures, with UniProt mapping and homolog-based conformational comparison ([paper](https://doi.org/10.1093/bioinformatics/btag190)).
 - [iPTMnet](https://research.bioinformatics.udel.edu/iptmnet/) - Bioinformatics resource integrating PTM sites, modifying enzymes, and substrate relationships for systems biology.
@@ -459,15 +484,19 @@ _Last Verified: Q2 2026_
 
 &#x1F4D6; _Guide:_ [Single-Cell Best Practices](guides/single-cell-best-practices.md) _(planned)_
 
-- [scp](https://bioconductor.org/packages/scp) - Bioconductor package for processing and analyzing mass spectrometry-based single-cell proteomics data. `[CLI]`
+- [scp](https://bioconductor.org/packages/scp) - Bioconductor package for processing and analyzing MS-based single-cell proteomics data; includes the scplainer linear-modeling workflow for variance, differential abundance, and batch-aware analysis ([paper](https://doi.org/10.1186/s13059-025-03713-4)). `[CLI]` `[API]`
 - [SCeptre](https://github.com/bfurtwa/SCeptre) - Python package that extends Scanpy to analyze multiplexed single-cell proteomics data. `[CLI]`
 - [QFeatures](https://bioconductor.org/packages/QFeatures) - R/Bioconductor infrastructure for managing quantitative features across PSM, peptide, and protein levels; the data backbone the scp package builds on. `[API]`
 - [scpdata](https://bioconductor.org/packages/scpdata) - R/Bioconductor data package distributing standardized, annotated mass spectrometry single-cell proteomics datasets formatted with the scp structure. `[API]`
 - [DART-ID](https://github.com/SlavovLab/DART-ID) - Bayesian retention-time alignment that boosts confident peptide identifications in low-input and single-cell samples, increasing data points by 30-50% at 1% FDR. `[CLI]`
+- [DIDAR](https://github.com/orsburn/DIDARSCPQC) - Lightweight Python/GUI QC that scores TMT reporter ions in multiplexed single-cell MS/MS and filters spectra/runs before search ([paper](https://doi.org/10.1021/jasms.3c00238)). `[TMT]` `[CLI]` `[GUI]`
+- [DeepSCP](https://github.com/XuejiangGuo/DeepSCP) - Deep learning framework that adds predicted RT and fragment-intensity features to boost peptide/protein IDs in multiplexed single-cell proteomics ([paper](https://doi.org/10.1093/bib/bbac214)). `[CLI]`
 - [NIFty](https://github.com/PayneLab/nifty) - Top-scoring-pairs classification pipeline for single-cell proteomics that handles missing values without imputation and avoids circular analysis / batch pitfalls ([preprint](https://doi.org/10.64898/2026.03.06.710179)). `[CLI]` 🧪
 - [SoftHybrid](https://github.com/YixinShiProteomics/softHybridImpute) - Unsupervised R imputation that soft-weights Random Forest (MAR) and MinProb (MNAR) for single-cell and low-input proteomics ([preprint](https://doi.org/10.64898/2026.01.13.699212)). `[CLI]` `[API]` 🧪
 - [PSCS](https://pscs.xods.org/) - No-code web platform for designing, running, and publishing shareable single-cell omics analysis pipelines with data and interactive results ([paper](https://doi.org/10.1021/acs.jproteome.5c00178)). `[GUI]`
+- [SCP Viz](https://github.com/OrsburnLab-Pitt/SCPViz) - Shiny GUI for per-protein visualization and subpopulation contrasts in single-cell proteomics tables (MaxQuant, FragPipe, Spectronaut, Proteome Discoverer); hosted at [Pitt CRC](https://shiny.crc.pitt.edu/scpviz/) ([preprint](https://doi.org/10.1101/2023.08.29.555397)). `[GUI]` 🧪
 - [SCP resources (Slavov Lab)](https://scp.slavovlab.net/) - Community hub for single-cell proteomics methods, protocols, datasets, and reporting guidelines.
+- [SingPro](https://singpro.idrblab.net/) - Knowledge base of single-cell proteomics studies (MS and flow cytometry) with raw data, experimental metadata, and protein expression profiles ([paper](https://doi.org/10.1093/nar/gkad830)). `[GUI]`
 - [Single-Cell Proteomics Conference](https://single-cell.net/) - Annual conference with an open archive of recorded talks and community guidelines.
 - [Focus on single-cell proteomics (Nature Methods)](https://www.nature.com/collections/bdfhafhdeb) - Curated Nature Methods collection of articles on single-cell proteomics methods, challenges, and applications.
 
@@ -509,7 +538,7 @@ _Last Verified: Q2 2026_
 
 - [MSFragger](https://msfragger.nesvilab.org/) - Fragment-ion indexing database search engine for closed and open (mass-tolerant) peptide identification. `[DDA]` `[DIA]` `[CLI]`
 - [Comet](https://uwpr.github.io/Comet/) - Open-source tandem mass spectrometry database search engine derived from the SEQUEST algorithm. `[DDA]` `[CLI]`
-- [Sage](https://github.com/lazear/sage) - Cross-platform search engine in Rust with built-in quantification, rescoring, and FDR control. `[DDA]` `[CLI]` 🐧 🪟 🍎
+- [Sage](https://github.com/lazear/sage) - Cross-platform Rust search engine with built-in quantification, rescoring, and FDR control (stable v0.14.7; v0.15 beta adds diaPASEF) ([paper](https://doi.org/10.1021/acs.jproteome.3c00486)). `[DDA]` `[CLI]` 🐧 🪟 🍎
 - [Dear-PSM](https://github.com/jianweishuai/Dear-PSM) - Deep learning search engine for full-database PSM matching without precursor mass filtering and up to 20 variable modifications per peptide ([paper](https://doi.org/10.1002/smmd.20240014)). `[DDA]` `[CLI]`
 - [QuickSearchProt](https://github.com/barsnes-group/QuickSearchProt) - GUI tool that auto-selects Sage and X!Tandem search parameters from a representative MGF subset and exports SearchGUI-compatible `.par` files ([paper](https://doi.org/10.1021/acs.jproteome.5c00641)). `[DDA]` `[GUI]`
 - [Percolator](http://percolator.ms/) - Semi-supervised post-processor that rescores peptide-spectrum matches and controls FDR. `[CLI]`
@@ -525,6 +554,7 @@ _Last Verified: Q2 2026_
 - [UniScore](https://github.com/jPOST-tools/UniScorePrograms20241016) - Lightweight product-ion annotation score that unifies multi-engine DDA PSMs (Comet, X!Tandem, Mascot, MaxQuant) with target–decoy FDR, used in jPOST reanalysis ([paper](https://doi.org/10.1016/j.mcpro.2025.101010)). `[CLI]`
 - [Grape-Pi](https://github.com/FDUguchunhui/GrapePi) - Graph neural network that uses PPI message passing to improve protein-level identification calls from MS pipeline scores ([paper](https://doi.org/10.1093/bioadv/vbaf095)). `[CLI]` `[API]`
 - [PeptideForest](https://github.com/peptideforest/peptideForest) - Semisupervised random-forest rescoring that integrates PSMs from multiple DDA search engines (Ursgal-compatible) ([paper](https://doi.org/10.1021/acs.jproteome.4c00686)). `[DDA]` `[CLI]` `[API]`
+- [Pepid](https://github.com/lemieux-lab/pepid) - Modular research-oriented peptide search engine with staged, modifiable scoring for integrating deep-learning identification methods (v1.2.0) ([preprint](https://doi.org/10.1101/2023.10.30.564469)). `[DDA]` `[CLI]` `[API]` 🧪
 - [ProtGraph](https://github.com/mpc-bioinformatics/ProtGraph) - Builds UniProt feature graphs (isoforms/variants/cleavage) and exports precursor-specific FASTA to expand MS peptide search space ([paper](https://doi.org/10.1093/bib/bbae671)). `[CLI]` `[API]`
 
 ### Quantification
@@ -533,15 +563,18 @@ _Last Verified: Q2 2026_
 - [IonQuant](https://github.com/Nesvilab/IonQuant) - Label-free and isobaric quantification with match-between-runs and FDR control, used within the FragPipe ecosystem. `[Label-Free]` `[TMT]` `[CLI]`
 - [FlashLFQ](https://github.com/smith-chem-wisc/FlashLFQ) - Label-free quantification engine with match-between-runs, usable standalone or within MetaMorpheus. `[Label-Free]` `[CLI]`
 - [directLFQ](https://github.com/MannLabs/directlfq) - Label-free protein quantification using a ratio-based algorithm that scales linearly to very large sample cohorts. `[Label-Free]` `[CLI]` `[API]`
+- [DeepRTAlign](https://github.com/PHOENIXcenter/deeprtalign) - Deep learning retention-time alignment for large-cohort LC-MS feature matching across monotonic and non-monotonic shifts (v1.2.2) ([paper](https://doi.org/10.1038/s41467-023-43909-5)). `[Label-Free]` `[CLI]`
 - [Triqler](https://github.com/statisticalbiotechnology/triqler) - Probabilistic model that propagates identification and quantification error into protein-level fold changes. `[CLI]`
 - [Alpaca](https://github.com/borfebor/alpaca_proteomics) - Python pipeline (library + GUI) for absolute label-free protein abundance mining from unprocessed LFQ tables, including enriched-fraction designs ([paper](https://doi.org/10.1002/pmic.202400417)). `[Label-Free]` `[CLI]` `[GUI]` `[API]`
 - [ibaqpy](https://github.com/bigbio/ibaqpy) - Scalable iBAQ / rIBAQ / ppb absolute quantification from quantms.io feature tables with SDRF-driven normalization and batch correction ([paper](https://doi.org/10.1016/j.jprot.2025.105440)). `[CLI]` `[API]`
+- [SEPepQuant](https://github.com/bzhanglab/SEPepQuant) - Graph theory method that quantifies structurally equivalent peptide groups (SEPEPs) for isoform-level characterization in shotgun proteomics (v1.0.0-alpha) ([paper](https://doi.org/10.1038/s41467-023-41558-2)). `[CLI]`
 
 ### Statistical Analysis
 
 - [MSstats](https://msstats.org/) - R/Bioconductor package for statistical relative quantification across label-free, DIA, and labeled experiments. `[CLI]`
 - [MSstatsWeightedSummary](https://github.com/Vitek-Lab/MSstatsWeightedSummary) - R package for weighted protein-level summarization of shared-peptide clusters, compatible with MSstatsTMT ([paper](https://doi.org/10.1093/bioinformatics/btaf046)). `[TMT]` `[CLI]` `[API]`
 - [MSstatsResponse](https://bioconductor.org/packages/MSstatsResponse/) - Semi-parametric dose-response modeling for chemoproteomics (drug–protein interaction detection and IC50 estimation) that works with MSstats/MSstatsTMT summaries. `[CLI]`
+- [CurveCurator](https://github.com/kusterlab/curve_curator) - Recalibrated F-statistic and target–decoy FDR for classifying high-throughput dose–response curves (proteomics drug profiling and related assays) with an interactive dashboard ([paper](https://doi.org/10.1038/s41467-023-43696-z)). `[CLI]` `[GUI]`
 - [DEqMS](https://bioconductor.org/packages/DEqMS) - Differential expression analysis that models PSM-count-dependent variance in quantitative proteomics. `[CLI]`
 - [LimROTS](https://bioconductor.org/packages/LimROTS) - Bioconductor hybrid of limma empirical Bayes and ROTS reproducibility-optimized ranking for differential abundance in MS proteomics ([paper](https://doi.org/10.1093/bioinformatics/btaf570)). `[CLI]` `[API]`
 - [DEprot](https://github.com/sebastian-gregoricchio/DEprot) - R package for LFQ proteomics normalization, serial MNAR-aware imputation, and differential expression, aimed at enrichment and knockout designs ([paper](https://doi.org/10.1093/nargab/lqag015)). `[CLI]` `[API]`
@@ -555,19 +588,26 @@ _Last Verified: Q2 2026_
 - [Perseus](https://maxquant.net/perseus/) - Graphical platform for downstream statistical analysis of proteomics matrices. `[GUI]` 🪟
 - [ProteoSign v2](https://bioinformatics.med.uoc.gr/ProteoSign/) - Web/Docker LIMMA differential expression for MaxQuant and Proteome Discoverer tables with enrichment and publication-ready plots ([paper](https://doi.org/10.1093/nar/gkab329)). `[GUI]` 📦
 - [MAGMa](https://github.com/shg018/MAGMa) - Differential expression for TMT/SILAC proteomics aimed at subtle abundance shifts, with volcano and network plots ([preprint](https://doi.org/10.1101/2024.06.24.600424)). `[GUI]` 🧪
+- [msTrawler](https://github.com/Calico/msTrawler) - R toolkit for multi-batch isobaric (TMT) quantification that sets reliability thresholds and models intensity-dependent heteroskedasticity ([paper](https://doi.org/10.1038/s41592-023-02120-6)). `[TMT]` `[CLI]`
 - [msqrob2](https://bioconductor.org/packages/msqrob2) - Robust linear mixed model framework for differential abundance, including missing-data-aware workflows. `[CLI]`
 - [msqrob2PTM](https://github.com/statOmics/msqrob2PTMpaper) - msqrob2/QFeatures workflow for differential abundance and differential usage at the PTM and peptidoform level (vs parent-protein confounding) ([paper](https://doi.org/10.1016/j.mcpro.2023.100708)). `[CLI]`
+- [PepSetTest](https://bioconductor.org/packages/PepSetTest) - Peptide-centric differential expression that tests coordinated peptide changes per protein without aggregating to protein abundances first ([paper](https://doi.org/10.1093/bioinformatics/btae270)). `[CLI]`
 - [proDA](https://github.com/const-ae/proDA) - Differential abundance analysis with a probabilistic dropout model that handles missing values without imputation. `[CLI]`
 - [protti](https://github.com/jpquast/protti) - R package for quality control and analysis of bottom-up and LiP-MS data, working with output from Spectronaut, MaxQuant, Proteome Discoverer, and Skyline. `[CLI]`
 - [HarmonizR](https://github.com/HSU-HPC/HarmonizR) - R package for batch-effect correction across independent proteomics datasets; it splits the matrix into sub-matrices with enough overlap to run ComBat or limma despite missing values, then reassembles the corrected result ([paper](https://doi.org/10.1038/s41467-022-31007-x)). `[API]`
 - [omicsGMF](https://bioconductor.org/packages/omicsGMF) - Bioconductor matrix-factorization toolkit that jointly performs dimensionality reduction, batch/covariate correction, and missing-value imputation for bulk and single-cell proteomics ([paper](https://doi.org/10.1038/s41467-026-73402-8)). `[CLI]` `[API]`
+- [PEPerMINT](https://github.com/DILiS-lab/pepermint) - Graph neural network for peptide-level MS abundance imputation using peptide–protein graphs and sequence embeddings, with uncertainty estimates ([paper](https://doi.org/10.1093/bioinformatics/btae389)). `[CLI]` `[API]`
 - [HarmonizePy](https://github.com/LangeLab/HarmonizePy) - Pure-Python port of the HarmonizR approach (ComBat and limma) with structural-missingness handling, batch sorting, and blocking, validated against the R references and requiring no R runtime. `[CLI]` `[API]`
 - [OBC (Omics Batch Correct)](https://zhljude.shinyapps.io/OBC-app/) - Shiny pipeline for MS proteomics/metabolomics preprocessing and ComBat batch correction with dual-tier QC (PCA/UMAP/PVCA plus differential-molecule checks) ([paper](https://doi.org/10.1093/gpbjnl/qzag033)). `[GUI]`
 - [BioTrendFinder](https://cphbat.shinyapps.io/biotrendfinder/) - Interactive web tool that finds molecular trendlines in bulk proteomics/transcriptomics via sample ranking and links them to STRING and ontology modules ([preprint](https://doi.org/10.64898/2026.04.12.717932)). `[GUI]` 🧪
+- [ProteoMixture](https://lmdomics.org/ProteoMixture/) - Shiny cell-type deconvolution of bulk tissue MS proteomics into tumor, stroma, and immune scores using optimized protein signatures (HGSOC-focused) ([paper](https://doi.org/10.1016/j.isci.2024.109198)). `[GUI]`
 - [SQuAPP](https://github.com/LangeLab/SQuAPP) - Shiny application for streamlined analysis and visual comparison across multiple levels of proteomics data (peptide, protein, and PTM). `[GUI]`
 - [TraianProt](https://github.com/SamueldelaCamaraFuentes/TraianProt) - R/Shiny downstream analysis for wide-format quantitative proteomics (MaxQuant, MSFragger, DIA-NN, Proteome Discoverer), including filtering, differential testing, enrichment, and STRING networks. `[GUI]` `[CLI]`
 - [DiaReport](https://github.com/Gevaert-Lab/diareport) - R package for DIA-NN differential expression (MSqRob2 / QFeatures) that emits reproducible interactive Quarto HTML reports for protein- and precursor-level designs. `[DIA]` `[CLI]`
+- [DIAgui](https://github.com/marseille-proteomique/DIAgui) - Shiny/R app to filter DIA-NN report.tsv and quantify precursors/peptides/proteins/genes with MaxLFQ, Top3, or iBAQ (v1.4.10) ([paper](https://doi.org/10.1093/bioadv/vbae001)). `[DIA]` `[GUI]`
 - [SpectroPipeR](https://github.com/stemicha/SpectroPipeR) - R pipeline for post-Spectronaut DIA analysis (normalization, MaxLFQ/iBAQ, ROPECA stats, interactive HTML reports) ([paper](https://doi.org/10.1093/bioinformatics/btaf086)). `[DIA]` `[CLI]`
+- [Autoprot](https://github.com/ag-warscheid/autoprot) - Python package for MaxQuant quantitative proteomics downstream analysis that bridges R statistics and interactive Plotly visualization in Jupyter ([preprint](https://doi.org/10.1101/2024.01.18.571429)). `[API]` 🧪
+- [iSanXoT](https://github.com/CNIC-Proteomics/iSanXoT) - Standalone GUI for integrative SanXoT/GIA quantitative workflows (weighted spectrum→peptide→protein integrations, PTM and systems-biology analyses) from MaxQuant, FragPipe, and Proteome Discoverer (v2.1.1) ([paper](https://doi.org/10.1016/j.csbj.2023.12.034)). `[GUI]`
 - [prolfquapp](https://github.com/prolfqua/prolfquapp) - Command-line interface to the [prolfqua](https://github.com/fgcz/prolfqua) R package for differential expression and QC reports from DIA-NN, MaxQuant, FragPipe, and Spectronaut outputs ([paper](https://doi.org/10.1021/acs.jproteome.4c00911)). `[CLI]` 📦
 - [QProMS](https://github.com/ieoresearch/QProMS) - Shiny app for label-free quantitative proteomics downstream analysis (MaxQuant, FragPipe, Spectronaut, DIA-NN, AlphaPept) with mixed missing-value imputation and exportable reports. `[GUI]` `[Label-Free]`
 - [ProteoArk](https://ciods.in/proteoark/) - Web/Docker platform for postprocessing MaxQuant, Proteome Discoverer, and MSFragger results (LFQ/SILAC/TMT) with DE, enrichment, and publication-ready plots ([paper](https://doi.org/10.1021/acs.jproteome.4c00556)). `[GUI]` 📦
@@ -599,6 +639,7 @@ _Last Verified: Q2 2026_
 - [PTMVision](https://ptmvision-tuevis.cs.uni-tuebingen.de/) - Interactive web server for exploring MS-derived PTM landscapes (MaxQuant, MSFragger, Spectronaut, Sage, ionbot, mzIdentML/CSV) with sequence and 3D/contact-map views ([paper](https://doi.org/10.1021/acs.jproteome.4c00679)). `[GUI]` 📦
 - [Limelight](https://limelight-ms.org/) - Web platform for sharing and visualizing full-stack DDA proteomics results (PSMs through proteins/modifications) across search pipelines ([paper](https://doi.org/10.1021/acs.jproteome.4c00968)). `[DDA]` `[GUI]`
 - [pyOpenMS-viz](https://github.com/OpenMS/pyopenms_viz) - Pandas DataFrame plotting API for MS spectra, chromatograms, mobilograms, and peak maps with matplotlib/bokeh/plotly backends ([paper](https://doi.org/10.1021/acs.jproteome.4c00873)). `[API]`
+- [MassDash](https://github.com/Roestlab/massdash) - Web/Python dashboard for interactive DIA chromatogram and ion-mobility visualization across OpenSWATH, DIA-NN, and dreamDIA results (v0.1.1; [demo](https://massdash.streamlit.app)) ([paper](https://doi.org/10.1021/acs.jproteome.4c00026)). `[DIA]` `[GUI]` `[API]`
 
 ### Quality Control
 
@@ -608,12 +649,16 @@ _Last Verified: Q2 2026_
 - [PeakQC](https://github.com/pnnl/IonToolPack) - Omics-agnostic automated QC of raw MS runs (proteomics/metabolomics/lipidomics) via PCA and ion metrics without requiring IDs; ships in IonToolPack ([paper](https://doi.org/10.1021/jasms.4c00146)). `[GUI]`
 - [rawDiag](https://github.com/fgcz/rawDiag) - R package producing diagnostic plots from raw files to support rational LC-MS method optimization. `[CLI]`
 - [MSstatsQC](https://bioconductor.org/packages/MSstatsQC/) - Longitudinal system-suitability and QC monitoring with statistical process control charts and an optional supervised ML (MSstatsQC-ML) module for run failure prediction. `[CLI]` `[GUI]`
+- [MsQuality](https://bioconductor.org/packages/MsQuality/) - Bioconductor package computing HUPO-PSI mzQC metrics from Spectra/MsExperiment/Chromatograms for per-sample MS QC (v1.12.0) ([paper](https://doi.org/10.1093/bioinformatics/btad618)). `[CLI]` `[API]`
+- [HowDirty](https://github.com/DavidGZ1/HowDirty) - R package (v1.0.0) that turns Skyline MS1 contaminant features into interactive HTML reports of PEG, detergent, and other LC-MS sample contaminants ([paper](https://doi.org/10.1002/pmic.202300134)). `[CLI]`
 - [LAMPrEY](https://github.com/LewisResearchGroup/LAMPrEY) - Docker-based QC pipeline server for large-cohort quantitative proteomics that automates MaxQuant and RawTools processing with a web dashboard and API ([preprint](https://doi.org/10.64898/2026.05.06.722826)). `[GUI]` `[API]` `[TMT]` 📦 🧪
 - [diagFDR](https://cran.r-project.org/package=diagFDR) - R package for verifiable target–decoy FDR diagnostics (scope, calibration, and stability) across MaxQuant, DIA-NN, and mzIdentML outputs ([preprint](https://doi.org/10.64898/2026.04.16.718468)). `[CLI]` 🧪
 - [pmultiqc](https://pmultiqc.quantms.org/) - MultiQC plugin for metadata-oriented proteomics QC reports (quantms, MaxQuant, DIA-NN, FragPipe, mzIdentML, ProteoBench) with SDRF sample grouping ([paper](https://doi.org/10.1016/j.mcpro.2026.101530)). `[CLI]`
 - [ProteoGyver](https://github.com/varjolab/Proteogyver) - Lightweight Docker web platform for rapid MS proteomics QC and preliminary DE/interactomics (SAINT) analysis ([paper](https://doi.org/10.1093/bioinformatics/btag050)). `[GUI]` 📦
 - [SpecQuality](https://github.com/alkayadav10/SpecQuality) - MS/MS spectral quality scores (SQS) from ten features via geometric mean or XGBoost for pre-search triage and post-search PSM validation ([paper](https://doi.org/10.1021/jasms.5c00168)). `[CLI]`
+- [SpectiCal](https://github.com/PlantProteomes/SpectiCal) - Pre-search MS2 m/z calibration of DDA mzML from known low-mass ions, with common-peak reports and calibrated output files ([paper](https://doi.org/10.1021/acs.jproteome.3c00882)). `[DDA]` `[CLI]`
 - [iDIA-QC](https://github.com/guomics-lab/iDIA-QC) - GUI for AI quality control of DIA raw files (Orbitrap, TripleTOF, timsTOF) using msConvert/DIA-NN metrics ([paper](https://doi.org/10.1038/s41467-024-54871-1)). `[DIA]` `[GUI]`
+- [Rapid QC-MS](https://github.com/czbiohub-sf/Rapid-QC-MS) - Interactive dashboard for realtime LC-MS/MS acquisition QC (internal-standard RT/m/z/intensity, Slack/email alerts, Google Drive sync) via mzML ([paper](https://doi.org/10.1021/acs.analchem.4c00786)). `[GUI]`
 - [CAT-APP](https://www.bloodecosystem.com/tools/CAT-APP/) - Web platform that detects and corrects erythrocyte/platelet/coagulation contamination in plasma proteomics matrices ([preprint](https://doi.org/10.1101/2025.07.08.663798)). `[GUI]` 🧪
 
 ### Pipelines & Frameworks
@@ -643,6 +688,7 @@ _Last Verified: Q2 2026_
 - [WOMBAT-P](https://github.com/wombat-p/WOMBAT-Pipelines) - Nextflow platform for running and benchmarking alternative label-free proteomics workflows from SDRF-Proteomics / ProteomeXchange inputs (v0.9.12) ([paper](https://doi.org/10.1021/acs.jproteome.3c00636)). `[Label-Free]` `[CLI]` 📦
 - [MoTrPAC proteomics pipeline](https://github.com/MoTrPAC/motrpac-proteomics-pipeline) - WDL/Cromwell cloud pipeline for MoTrPAC MS-GF+ (MASIC/PlexedPiper) and MaxQuant analyses on GCP (v1.3.0; [Zenodo](https://doi.org/10.5281/zenodo.13235298)). `[TMT]` `[CLI]` 📦
 - [MS-PyCloud](https://github.com/huizhanglab-jhu/ms-pycloud) - AWS cloud GUI pipeline for proteomic and glycoproteomic LC-MS/MS (search, FDR, protein inference, protein/glyco/PTM quant) ([paper](https://doi.org/10.1021/acs.analchem.3c01497)). `[GUI]` `[CLI]`
+- [CloudProteoAnalyzer](https://github.com/Biocomputing-Research-Group/CloudProteoAnalyzer) - HPC/cloud SaaS-style proteomics ID/quant wrapping Sipros Ensemble and ProRata; prefer GitHub (hosted sipros.oscer.ou.edu unreachable as of 2026-07) ([paper](https://doi.org/10.1093/bioadv/vbae024)). `[GUI]` `[CLI]`
 - [nf-core/proteomicslfq](https://github.com/nf-core/proteomicslfq) - OpenMS and MSstats label-free quantification pipeline; the predecessor to quantms, now largely superseded (DSL1). `[Label-Free]` `[CLI]` 📦
 - [snakemake-ms-proteomics](https://github.com/MPUSP/snakemake-ms-proteomics) - Snakemake pipeline for label-free DDA built on FragPipe and MSstats with automated quality control. `[DDA]` `[Label-Free]` `[CLI]` 📦
 - [Galaxy Proteomics (usegalaxy.eu)](https://proteomics.usegalaxy.eu/) - Dedicated European Galaxy proteomics server (Galaxy-P) hosting MS proteomics and proteogenomics tools and workflows that run in the browser without local installation. `[GUI]`
@@ -661,14 +707,16 @@ _Last Verified: Q2 2026_
 - [Prosit](https://www.proteomicsdb.org/prosit/) - Deep learning models for fragment intensity and retention time prediction, used for spectral libraries and rescoring. `[API]`
 - [DeepLC](https://github.com/compomics/DeepLC) - Retention time prediction for peptides, including modified peptides not seen during training. `[CLI]` `[API]`
 - [Casanovo](https://github.com/Noble-Lab/casanovo) - Transformer de novo peptide sequencer (and DB-search scoring) from MS/MS spectra; v5.2.0 adds timsTOF .d support ([paper](https://doi.org/10.1038/s41467-024-49731-x)). `[CLI]`
-- [Transformer-DIA](https://github.com/Biocomputing-Research-Group/Transformer-DIA) - Transformer de novo peptide sequencer for multiplexed DIA MS/MS spectra ([paper](https://doi.org/10.1109/bibe60311.2023.00013)). `[DIA]` `[CLI]`
+- [Transformer-DIA](https://github.com/Biocomputing-Research-Group/Transformer-DIA) - Transformer de novo peptide sequencer for multiplexed DIA MS/MS spectra (formerly Casanovo-DIA) ([paper](https://doi.org/10.1109/bibe60311.2023.00013)). `[DIA]` `[CLI]`
 - [NovoRank](https://github.com/HanyangBISLab/NovoRank) - Spectral-clustering + deep-learning re-ranker that improves PSM precision/recall for Casanovo, PEAKS, and pNovo3 de novo outputs ([paper](https://doi.org/10.1021/acs.jproteome.4c00300)). `[CLI]`
 - [Modanovo](https://github.com/gagneurlab/Modanovo) - PTM-aware de novo sequencer built on Casanovo, trained on in vivo and synthetic modified spectra (MULTI-PTM / PROSPECT-PTM) ([paper](https://doi.org/10.1016/j.mcpro.2025.101501)). `[CLI]`
 - [MSBooster](https://github.com/Nesvilab/MSBooster) - Adds deep-learning-predicted features (spectra, retention time) to rescore peptide identifications. `[CLI]`
-- [Oktoberfest](https://github.com/wilhelm-lab/oktoberfest) - Open-source Prosit-based pipeline for collision energy calibration, rescoring, and spectral library generation. `[CLI]`
+- [Oktoberfest](https://github.com/wilhelm-lab/oktoberfest) - Open-source Prosit/Koina pipeline (v0.11.1) for collision energy calibration, PSM rescoring, and spectral library generation ([paper](https://doi.org/10.1002/pmic.202300112)). `[CLI]`
 - [MS2PIP](https://github.com/compomics/ms2pip) - Machine-learning predictor of peptide fragmentation spectra for spectral libraries and rescoring. `[CLI]` `[API]`
+- [Ionmob](https://github.com/theGreatHerrLebert/ionmob) - Python framework for peptide collisional cross-section (CCS) prediction from timsTOF data, with pretrained models and CCS-aware rescoring (PyPI 0.2.2) ([paper](https://doi.org/10.1093/bioinformatics/btad486)). `[CLI]` `[API]`
+- [CoSpred](https://github.com/pfizer-opensource/CoSpred) - End-to-end workflow to train and run full MS/MS (or classical b/y) spectrum predictors from raw data using Transformer or BiGRU models ([paper](https://doi.org/10.1002/pmic.70004)). `[CLI]`
 - [Altimeter](https://github.com/GoldfarbLab/Altimeter) - Transformer that predicts NCE-dependent fragment intensities via cubic B-splines (isolation-window–aware isotopes); hosted on Koina and paired with Pioneer DIA ([preprint](https://doi.org/10.64898/2026.02.16.706201)). `[API]` 🧪
-- [MS2Rescore](https://github.com/compomics/ms2rescore) - Modular rescoring framework that adds predicted spectral and related features to boost peptide identifications; TIMS²Rescore mode optimizes DDA-PASEF / timsTOF workflows with IM2Deep ([paper](https://doi.org/10.1021/acs.jproteome.4c00609)). `[CLI]`
+- [MS2Rescore](https://github.com/compomics/ms2rescore) - Modular AI-assisted PSM rescoring platform (GUI/CLI/API; v4.0.1) that adds predicted spectral and related features to boost identifications; TIMS²Rescore mode optimizes DDA-PASEF / timsTOF with IM2Deep ([3.0 paper](https://doi.org/10.1021/acs.jproteome.3c00785), [TIMS²Rescore](https://doi.org/10.1021/acs.jproteome.4c00609)). `[CLI]` `[GUI]` `[API]`
 - [InstaNovo](https://github.com/instadeepai/InstaNovo) - De novo peptide sequencing combining a transformer model (InstaNovo) with a diffusion model (InstaNovo+) that refines predicted sequences by iterative decoding ([paper](https://doi.org/10.1038/s42256-025-01019-5)). `[CLI]`
 - [Pfly](https://github.com/wilhelm-lab/dlomix) - Deep learning peptide detectability (flyer/non-flyer) predictor shipped in the DLOmix framework, fine-tunable per experiment ([paper](https://doi.org/10.1021/acs.jproteome.4c00973)). `[CLI]` `[API]`
 - [DeepPD](https://github.com/leonern/DeepPD) - Peptide detectability predictor combining ESM-2 embeddings with an information-bottleneck multi-feature model ([paper](https://doi.org/10.1007/s12539-024-00665-4)). `[CLI]`
@@ -713,6 +761,7 @@ _Last Verified: Q2 2026_
 - [Panorama Public](https://panoramaweb.org/home/wiki-page.view?name=panorama_public) - ProteomeXchange member repository for Skyline documents and targeted proteomics datasets linked to publications. _See also: [Panorama](#targeted--srm--prm)_
 - [ppx](https://github.com/wfondrie/ppx) - Python interface to find and download files and metadata from ProteomeXchange repositories. `[CLI]` `[API]`
 - [PRIDE](https://www.ebi.ac.uk/pride/) - Repository for mass spectrometry proteomics data hosted at EMBL-EBI, and a founding member of the ProteomeXchange consortium.
+- [PRIDE Chatbot](https://www.ebi.ac.uk/pride/chatbot/) - LLM assistant for PRIDE documentation Q&A and dataset discovery ([paper](https://doi.org/10.1002/pmic.202400005)). `[GUI]` `[API]`
 - [ProteomeXchange](https://www.proteomexchange.org/) - Consortium providing a single point of submission and access across major proteomics repositories.
 - [ProteoWizard](https://proteowizard.sourceforge.io/) - Cross-platform libraries and tools (including msconvert) for converting and processing raw vendor data. `[CLI]` `[GUI]` 🐧 🪟 🍎
 - [PXAudit](https://github.com/LangeLab/PXAudit) - Command-line tool that audits PRIDE dataset metadata, scoring each study on a 7-tier FAIR ladder and a separate quantification-readiness tier and writing results to a local SQLite database. `[CLI]`
@@ -793,6 +842,7 @@ _Last Verified: Q2 2026_
 - [SIGNOR](https://signor.uniroma2.it/) - Stores manually curated causal signaling interactions, including phosphorylation events, as customizable directional networks.
 - [STRING](https://string-db.org/) - Known and predicted protein associations (functional, physical, and regulatory/directional networks in v12.5) with enrichment and clustering ([paper](https://doi.org/10.1093/nar/gkae1113)).
 - [WikiPathways](https://www.wikipathways.org/) - Provides an open, community-curated collection of biological pathways available for download and enrichment analysis.
+- [Yeast Interactome (Mann Lab)](http://yeast-interactome.biochem.mpg.de:3838/interactome/) - Interactive portal for the AE-MS Saccharomyces cerevisiae interactome (~3.9k proteins / ~31k interactions from ~4.2k GFP pull-downs) ([paper](https://doi.org/10.1038/s41586-023-06739-5)). `[GUI]`
 
 ### Disease, Drug & Target Knowledge Bases
 
@@ -812,17 +862,21 @@ _Last Verified: Q2 2026_
 ### Expression & Proteoform Atlases
 
 - [Blood Proteoform Atlas](https://blood-proteoform-atlas.org/) - Provides a reference map of proteoforms across human hematopoietic cell types in blood and bone marrow.
+- [AHP DB (Aqueous Humor Proteomics)](https://ahp.augusta.edu/) - Reference LC-MS/MS proteome of human aqueous humor (~307 samples / ~1.6k proteins detected in >5% of samples) with clinical metadata ([paper](https://doi.org/10.1093/database/baae001)). `[GUI]`
 - [Expression Atlas](https://www.ebi.ac.uk/gxa/home) - Provides gene and protein expression results across tissues, cell types, and conditions from curated RNA-seq and proteomics studies.
 - [GPMDB](https://gpmdb.thegpm.org/) - Global Proteome Machine Database of observed peptide and protein evidence from public tandem MS data reanalyzed with X!Tandem; US IP addresses have been blocked from queries since February 2025.
 - [GTEx Portal](https://gtexportal.org/home/) - Provides tissue-specific gene expression and regulatory data across human tissues from a large donor cohort.
 - [Human Protein Atlas](https://www.proteinatlas.org/) - Maps human protein expression and subcellular localization across tissues, cells, organs, and blood using imaging, mass spectrometry, and transcriptomics.
+- [HuBMAP Data Portal](https://portal.hubmapconsortium.org/) - NIH multi-organ spatial atlas of healthy human tissues including LC-MS proteomics and MSI alongside imaging and single-cell sequencing ([paper](https://doi.org/10.1038/s41556-023-01194-w)).
 - [Human Proteoform Atlas](https://human-proteoform-atlas.org/) - Provides experimentally verified human proteoforms, descended from the Consortium for Top-Down Proteomics Proteoform Atlas.
 - [Human Proteome Map](http://www.humanproteomemap.org/) - Provides a draft map of human protein expression across adult and fetal tissues from the Kim et al. proteome study.
 - [PeptideAtlas](https://peptideatlas.org/) - Provides a multi-organism compendium of peptides identified across uniformly reprocessed tandem MS datasets.
 - [E. coli PeptideAtlas](https://peptideatlas.org/builds/ecoli/) - Pan-proteome PeptideAtlas build from ~73M spectra across 40 E. coli datasets (closed + open search), including >10k PTM sites ([paper](https://doi.org/10.1021/acs.jproteome.5c00902)).
 - [Borrelia PeptideAtlas](https://peptideatlas.org/builds/borrelia/) - Uniformly reprocessed B. burgdorferi PeptideAtlas build (2024-03) across isolates B31, MM1, and B31-5A4 (~82k peptides; PRIDE PXD046281) ([paper](https://doi.org/10.1038/s41597-024-04047-9)).
+- [Brewing Yeast Proteomics (Hefeweizen)](https://brewing-yeast-proteomics.ccbb.utexas.edu/) - Interactive shotgun-MS atlas of ale yeast (Wyeast 3068) protein dynamics across fermentation and serial repitching (~64.7k abundance measurements) ([paper](https://doi.org/10.1093/g3journal/jkad293)). `[GUI]`
 - [PanNDA](https://penglab.shinyapps.io/pannda/) - Interactive pan-neurodegeneration proteomics atlas from ~2,279 human brain samples across six diseases, spanning whole/insoluble proteomes plus phospho- and ubiquitinomes ([paper](https://doi.org/10.1016/j.cell.2026.02.026)). `[GUI]`
 - [BrainProt](https://www.brainprot.org/) - Omics knowledge base for human brain diseases with proteome/phosphoproteome maps (BDPM, IBPM), marker curation, and drug/clinical-trial browsing ([paper](https://doi.org/10.1021/acs.jproteome.4c00982)).
+- [CancerProteome](http://bio-bigdata.hrbmu.edu.cn/CancerProteome/) - Curated MS cancer proteome and PTM atlas across 21 cancer types (~7.4k samples; abundance, PTMs, clinical and drug-sensitivity modules) ([paper](https://doi.org/10.1093/nar/gkad824)). `[GUI]`
 - [Human Blood Proteomics Atlas (HuBP)](https://protein-notebook.streamlit.app/) - Streamlit atlas of MS blood/plasma protein detectability, intensity, and reproducibility across sample-prep methods (~12k proteins) ([preprint](https://doi.org/10.1101/2025.05.15.654311)). `[GUI]` 🧪
 - [Proteoform Atlas (CTDP)](https://atlas.topdownproteomics.org/) - Consortium for Top-Down Proteomics repository of experimentally observed proteoforms across organisms and datasets; the human-focused FAIR descendant is the Human Proteoform Atlas.
 - [ProteinExplorer](https://massive.ucsd.edu/ProteoSAFe/protein_explorer_splash.jsp) - Interactive MassIVE viewer mapping MassIVE-KB reanalysis evidence onto human proteins with coverage maps, functional sites, and spectrum provenance.
@@ -832,6 +886,9 @@ _Last Verified: Q2 2026_
 - [ShinySperm](https://reproproteomics.shinyapps.io/ShinySperm/) - Interactive atlas of epididymal sperm MS proteomes (domains, maturation stages, classifications); multi-species companion is [ShinySpermKingdom](https://reproproteomics.shinyapps.io/ShinySpermKingdom/) ([paper](https://doi.org/10.1071/rd24079)). `[GUI]`
 - [SubCellBarCode](https://data.scilifelab.se/services/subcellbarcode/) - MS fractionation resource and workflow mapping subcellular localization for ~12,400 genes across five cell lines, with a Bioconductor analysis package. `[API]`
 - [REMEMProt](https://rememprot.ciods.in/) - Curated human and mouse membrane-enriched MS proteome profiles (~14.6k proteins) with enrichment-method context, disease associations, and biomarker status ([paper](https://doi.org/10.26508/lsa.202302443)).
+- [Vesiclepedia](https://www.microvesicles.org/) - Manually curated repository of extracellular vesicle and particle molecular cargo (proteins, RNA, lipids, metabolites) across thousands of studies ([paper](https://doi.org/10.1093/nar/gkad1007)).
+- [SEPDB](https://sysomics.com/SEPDB/) - Secreted-protein knowledge base integrating human/mouse/rat secretory proteomics from serum, exosomes, and culture media with localization and disease annotations ([paper](https://doi.org/10.1093/database/baae007)).
+- [RiceProteomeDB (RPDB)](http://riceproteome.plantprofile.net/) - Web portal for storing, retrieving, and analyzing rice MS proteomics datasets (MaxQuant-oriented) ([paper](https://doi.org/10.1038/s41598-024-54151-4)).
 
 <!-- More entries welcome. See CONTRIBUTING.md -->
 
@@ -872,6 +929,7 @@ _Last Verified: Q2 2026_
 ### Metaproteomics
 
 - [Unipept](https://unipept.ugent.be/) - Web application, API, and CLI for taxonomic and functional analysis of metaproteomics peptides; v6.0 adds fast missed-cleavage / semi- and non-tryptic matching ([paper](https://doi.org/10.1021/acs.jproteome.4c00848)). `[GUI]` `[CLI]` `[API]`
+- [MiCId](https://www.ncbi.nlm.nih.gov/CBBresearch/Yu/micid/index.html) - Fast MS/MS microorganism classification/identification and antibiotic-resistance protein detection with accurate statistical scores; GUI downloads from the [Yu lab page](https://www.ncbi.nlm.nih.gov/CBBresearch/Yu/downloads.html) ([paper](https://doi.org/10.1089/cmb.2023.0149)). `[GUI]` `[CLI]`
 - [Peptonizer2000](https://github.com/compomics/Peptonizer2000) - Graphical-model taxonomic inference for metaproteomics that combines search-engine peptide scores with Unipept peptide–taxon maps and reports confidence scores ([paper](https://doi.org/10.1021/acs.jproteome.5c00567)). `[CLI]`
 - [MetaLab](https://imetalab.ca/) - Automated platform for metaproteomic identification, quantification, and taxonomic and functional annotation, supporting DDA and DIA data. `[GUI]` 🪟
 - [MetaProteomeAnalyzer (MPA)](https://github.com/compomics/meta-proteome-analyzer) - Open-source tool that identifies metaproteomics data and groups results into taxonomic and functional meta-proteins. `[GUI]` `[CLI]`
@@ -896,6 +954,9 @@ _Last Verified: Q2 2026_
 - [PepCentric](https://peptidecentric.org/) - Web portal for peptide-centric searches of novel sequences against repository-scale indexed MS/MS spectra (~2.3B) for proteogenomic validation ([preprint](https://doi.org/10.1101/2025.02.24.639867)). `[GUI]` 🧪
 - [ChiMSource](https://github.com/umutcakir/chimsource) - Finds alternative genomic sources for MS chimeric and non-chimeric peptides via multi-frame translation (successor to ShiftSCAN; frameshifting / mosaic translation studies) ([preprint](https://doi.org/10.1101/2025.05.30.656965)). `[CLI]` 🧪
 - [SmProt](http://bigdata.ibp.ac.cn/SmProt/) - Curates small proteins (<100 aa) and sORF products from Ribo-seq, literature, and MS across eight species, useful for microprotein / non-canonical search databases.
+- [OpenProt](https://www.openprot.org/) - Proteogenomic resource of alternative ORFs / AltProts and novel isoforms with Ribo-seq and MS evidence; v2.0 adds MS2Rescore-based identification and a spectrum viewer ([paper](https://doi.org/10.1093/nar/gkad1050)).
+- [CrypticProteinDB](https://www.maherlab.com/crypticproteindb) - Database of MS-supported non-canonical cancer ORFs from proteomes and immunopeptidomes across 14 cancer types, with epitope/neoantigen candidates ([paper](https://doi.org/10.1093/narcan/zcad024)).
+- [PgxSAVy](https://github.com/anuragraj/PgxSAVy) - Quality control and annotation of proteogenomic variant peptides after FDR (Variant Ambiguity Score; isobaric and positional-decoy checks); web server at [pgxsavy.igib.res.in](https://pgxsavy.igib.res.in/) may be flaky ([paper](https://doi.org/10.1016/j.csbj.2023.12.033)). `[CLI]`
 - [FuncPEP v2.0](https://bioinformatics.mdanderson.org/Supplements/FuncPEP/) - Curated database of experimentally validated functional short peptides (ncPEPs) translated from non-coding RNAs (~152 entries) ([paper](https://doi.org/10.3390/ncrna10020020)).
 - [Spritz](https://smith-chem-wisc.github.io/Spritz/) - Software that builds sample-specific proteoform databases annotated with sequence variants and PTMs from RNA-seq data. `[GUI]` 🪟
 
@@ -905,6 +966,7 @@ _Last Verified: Q2 2026_
 
 - [MHCquant](https://nf-co.re/mhcquant/) - Nextflow/nf-core pipeline for identifying and quantifying MHC-presented (immunopeptidomics) peptides, built on OpenMS. `[CLI]` 📦
 - [Immunolyser 2.0](https://immunolyser.erc.monash.edu/) - Web/Docker pipeline for immunopeptidomics peptide-centric analysis (length, motifs, clustering, MHC binding; murine support and MHC-TP haplotype prediction) ([paper](https://doi.org/10.1016/j.csbj.2025.10.007)). `[GUI]` 📦
+- [MHCpLogics](https://github.com/PurcellLab/MHCpLogics) - Interactive unsupervised clustering and visualization of MS immunopeptidomes for HLA allotype motif deconvolution ([paper](https://doi.org/10.1093/bib/bbae087)). `[GUI]`
 - [PAMPA](https://github.com/touzet/pampa) - ZooMS/paleoproteomics suite for taxonomic identification from MALDI peptide mass fingerprints using collagen marker tables ([paper](https://doi.org/10.1021/acs.jproteome.5c00389)). `[CLI]` `[GUI]`
 - [SAINTexpress](https://saint-apms.sourceforge.net/) - Tool that assigns confidence scores to protein-protein interactions from affinity purification-mass spectrometry (AP-MS) data. `[CLI]`
 - [WeSA](https://github.com/russelllab/wesa) - Weighted SocioAffinity scoring/ranking for affinity proteomics bait–prey lists (AP-MS, IP, proximity labeling) with interactive network filtering ([paper](https://doi.org/10.1093/nar/gkae423)). `[GUI]` `[CLI]`
@@ -945,6 +1007,45 @@ _Last Verified: Q2 2026_
 - [US HUPO](https://us-hupo.org/) - US national proteomics society with an annual conference and early-career researcher programs.
 
 > See also the [Consortium for Top-Down Proteomics](#top-down-proteomics), listed under Top-Down Proteomics.
+
+<!-- More entries welcome. See CONTRIBUTING.md -->
+
+**[&uarr; Back to Contents](#contents)**
+
+---
+
+## Research Labs & Software Portals
+
+_Last Verified: Q2 2026_
+
+> Entry points to labs and organizations that maintain multiple MS-computational tools. Prefer a software portal or GitHub org over a general group homepage. Individual tools stay listed under their workflow sections; this section is for discovering ecosystems, not duplicating every package. Still skip generic service catalogs (e.g. EMBL-EBI site indexes).
+
+- [bigbio](https://github.com/bigbio) - Open-source org for scalable proteomics workflows and standards (quantms / quantmsdiann, SDRF metadata, pmultiqc, quantms.io).
+- [CompOmics](https://www.compomics.com/) - Martens lab (UGent/VIB) software hub: PeptideShaker, SearchGUI, MS²PIP, DeepLC, MS²Rescore, Unipept, ThermoRawFileParser ([docs](https://compomics.github.io/), [GitHub](https://github.com/compomics)).
+- [Guo Lab (guomics)](https://github.com/guomics-lab) - Tiannan Guo group tools and resources spanning DIA workflows, clinical proteomics, and data portals ([guomics.com](https://www.guomics.com/)).
+- [Gygi Lab](https://gygi.hms.harvard.edu/software.html) - Harvard software portal (Comet, AScore, Real-Time Search / Tomahto / GoDig, PIXL, BioPlex Explorer, Monocle, and related utilities).
+- [Kuster Lab](https://www.kusterlab.org/) - TUM Proteomics and Bioanalytics software and resources (ProteomicsDB contributions, CurveCurator, and related tools) ([GitHub](https://github.com/kusterlab)).
+- [Lange Lab](https://github.com/LangeLab) - Quantitative proteomics and proteoform analysis tools (SQuAPP, ProteoForge, and related analysis resources).
+- [Lehtiö Lab](https://github.com/lehtiolab) - Clinical proteomics and systems biology software (SubCellBarCode and related analysis packages).
+- [MacCoss Lab](https://skyline.ms/) - University of Washington hub for Skyline, Panorama, and related targeted / quantitative proteomics desktop and server tools.
+- [Mann Labs](https://github.com/MannLabs) - Max Planck / Copenhagen ecosystem (AlphaPept, AlphaPeptDeep, AlphaTims, directLFQ, alphapepttools, and related packages).
+- [MaxQuant (Cox Lab)](https://maxquant.org/) - Download and documentation hub for MaxQuant / Andromeda and the MaxQuant Live instrument-control ecosystem.
+- [Nesvilab](https://nesvilab.org/) - Nesvizhskii lab portal for FragPipe, MSFragger, IonQuant, Philosopher, PTM-Shepherd, MSBooster, and related tools ([GitHub](https://github.com/Nesvilab)).
+- [Noble Lab](https://github.com/Noble-Lab) - University of Washington computational biology tools for proteomics ML and DIA (Carafe, Percolator-related work, and related projects).
+- [OpenMS](https://www.openms.de/) - Open-source C++/Python framework and community for computational mass spectrometry workflows ([GitHub](https://github.com/OpenMS)).
+- [Orsburn Lab](https://www.orsburnlab.org/orsburn-lab-software) - Single-cell and pharmacology MS software hub (DIDAR QC, SCPViz, cell-cycle stripper, TIMS Folding, and related utilities) ([GitHub](https://github.com/OrsburnLab-Pitt)).
+- [Payne Lab](https://github.com/PayneLab) - Computational proteomics education and methods (ProteomicsEducation tutorials, NIFty, and related packages).
+- [PNNL Computational Mass Spectrometry](https://github.com/PNNL-Comp-Mass-Spec) - Pacific Northwest National Laboratory tools for MS informatics (Informed-Proteomics, MASIC, and related projects).
+- [R for Mass Spectrometry](https://github.com/rformassspectrometry) - Coordinated Bioconductor/R ecosystem for MS data structures and proteomics analysis (Spectra, QFeatures, and related packages; [Gatto / UCLouvain-CBIO](https://github.com/UCLouvain-CBIO)).
+- [Rappsilber Lab](https://www.rappsilberlab.org/software/) - Cross-linking MS software portal (xiSEARCH, xiVIEW, and related XL-MS tools) ([GitHub](https://github.com/Rappsilber-Laboratory)).
+- [Röst Lab](https://github.com/Roestlab) - OpenSWATH / DIAlignR and related OpenMS-centric targeted and DIA analysis tools.
+- [Schweppe Lab](https://github.com/SchweppeLab) - Real-time MS and instrument-software research tools (Corona and related projects) ([docs](https://schweppelab.github.io/)).
+- [Slavov Lab](https://scp.slavovlab.net/) - Single-cell proteomics community hub (methods, datasets, guidelines) plus lab tools such as DART-ID ([slavovlab.net](https://slavovlab.net/)).
+- [Smith Lab (UW–Madison)](https://smith.chem.wisc.edu/software-2/) - MetaMorpheus, FlashLFQ, ProteoformSuite, mzLib, and related open-source search/quant tools ([GitHub](https://github.com/smith-chem-wisc)).
+- [Statistical Biotechnology (Käll Lab)](https://github.com/statisticalbiotechnology) - KTH group behind Percolator, Mokapot-adjacent methods, and related identification statistics ([Percolator](https://github.com/Percolator)).
+- [Vitek Lab](https://github.com/Vitek-Lab) - MSstats ecosystem for quantitative proteomics statistics (MSstats, MSstatsTMT, and related packages) ([lab](https://web.northeastern.edu/vitek-lab/), [msstats.org](https://msstats.org/)).
+- [Wilhelm Lab](https://github.com/wilhelm-lab) - ProteomicsDB / Oktoberfest / Koina-related ML and resource development ([ProteomicsDB](https://www.proteomicsdb.org/), [Koina](https://koina.wilhelmlab.org/)).
+- [Zhang Lab (MD Anderson)](https://github.com/bzhanglab) - Bing Zhang lab tools for proteomics, proteogenomics, and network analysis (LinkedOmics, PepQuery, XL-Ranker, and related projects).
 
 <!-- More entries welcome. See CONTRIBUTING.md -->
 

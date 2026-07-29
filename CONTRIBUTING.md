@@ -84,7 +84,7 @@ The description is the hardest part to get right. It should be **technical, fact
 
 - Never duplicate the full description in multiple sections.
 
-> **Ordering within a section:** Tool and software sections are ordered by curated importance (the most essential and widely used entries first), reflecting this list's "judgment over aggregation" philosophy. Database and reference sections (Protein Databases & Knowledge Bases, Data Repositories & Standards, and Community & Organizations) are ordered alphabetically for predictable lookup.
+> **Ordering within a section:** Tool and software sections are ordered by curated importance (the most essential and widely used entries first), reflecting this list's "judgment over aggregation" philosophy. Database and reference sections (Protein Databases & Knowledge Bases, Data Repositories & Standards, Community & Organizations, and Research Labs & Software Portals) are ordered alphabetically for predictable lookup.
 
 ### Quality bar
 
@@ -105,6 +105,7 @@ The awesome list is not just software. We welcome:
 - **Tutorials and courses:** video series, online courses, workshop materials
 - **Datasets:** benchmark datasets, reference proteomes, training data
 - **Community channels:** Slack workspaces, Discord servers, mailing lists
+- **Research lab software portals:** maintained hubs for groups/orgs that ship multiple MS-computational tools (see Research Labs & Software Portals)
 - **Podcasts and conferences:** recurring events and media relevant to proteomics
 
 The same format and quality bar apply. All non-tool entries should be genuinely useful to someone entering or working in the field.
