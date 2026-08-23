@@ -997,7 +997,7 @@ _Last Verified: Q2 2026_
 
 > Public repositories, data standards, controlled vocabularies, and format specifications.
 
-&#x1F4D6; _Guides:_ [File Format Cheat Sheet](guides/file-format-cheet-sheet.md) &middot; [Tool Compatibility Matrix](guides/compatibility-matrix.md)
+&#x1F4D6; _Guides:_ [File Format Cheat Sheet](guides/file-format-cheat-sheet.md) &middot; [Tool Compatibility Matrix](guides/compatibility-matrix.md)
 
 - [CPTAC / Proteomic Data Commons](https://pdc.cancer.gov/) - Repository for harmonized cancer proteogenomic datasets from the CPTAC program.
 - [HUPO-PSI Standards](https://www.psidev.info/) - Community data standards and controlled vocabularies (mzML, [mzIdentML 1.3.0](https://www.psidev.info/mzidentml) with crosslinking/multi-spectrum extensions, [mzTab 1.0](https://github.com/HUPO-PSI/mzTab) tabular results, and more) ([mzTab](https://doi.org/10.1074/mcp.O113.036681), [mzIdentML 1.3](https://doi.org/10.1002/pmic.202300385)).
@@ -1459,7 +1459,7 @@ This repository has two companion directories for content that goes beyond a lin
 | `guides/`    | Opinionated expert deep-dives, decision trees, comparison tables, and mini-guides (500 words) | [All Guides](guides/)       |
 | `workflows/` | Practitioner start-to-finish pipelines with Nextflow/Snakemake snippets                       | [All Workflows](workflows/) |
 
-**Published guides:** [Beginner's Guide](guides/beginners-guide.md) &middot; [File Format Cheat Sheet](guides/file-format-cheet-sheet.md) &middot; [Tool Compatibility Matrix](guides/compatibility-matrix.md)
+**Published guides:** [Beginner's Guide](guides/beginners-guide.md) &middot; [File Format Cheat Sheet](guides/file-format-cheat-sheet.md) &middot; [Tool Compatibility Matrix](guides/compatibility-matrix.md)
 
 **Planned guides:** [Starter Packs](guides/starter-packs.md) &middot; [DIA Tools Comparison](guides/dia-tools-comparison.md)
 

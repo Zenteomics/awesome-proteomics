@@ -111,7 +111,7 @@ This guide covers bottom-up (peptide-centric) proteomics, the most common starti
 - [Quantitative Proteomics](../README.md#quantitative-proteomics) - DIA and targeted quantification
 - [Bioinformatics & Computational Tools](../README.md#bioinformatics--computational-tools) - the full computational toolbox
 - [General Resources](../README.md#general-resources) - tutorials, courses, and reviews
-- [File Format Cheat Sheet](file-format-cheat-sheet.md) - deeper reference on formats and conversion (planned)
+- [File Format Cheat Sheet](file-format-cheat-sheet.md) - deeper reference on formats and conversion
 
 ---
 

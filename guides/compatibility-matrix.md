@@ -47,13 +47,13 @@ It does **not** rank tools by quality or sensitivity - that belongs in tool-spec
 | DIA-NN                 |      ✅       |          ✅           |     ✅ ^2     |      🔄      |      🔄       |      ✅      |
 | MaxQuant               |      ✅       |          ✅           |      ✅       |      ✅      |      🔄       |      ✅      |
 | MetaMorpheus           |      ✅       |          🔄           |      🔄       |      🔄      |      🔄       |    ✅ ^3     |
-| Sage                   |     🟡 ^4      |         🟡 ^4         |      🔄       |      🔄      |      🔄       |    ✅ ^5     |
+| Sage                   |     🟡 ^4     |         🟡 ^4         |      🔄       |      🔄      |      🔄       |    ✅ ^5     |
 | Comet                  |      🔄       |          🔄           |      🔄       |      🔄      |      🔄       |    ✅ ^6     |
 | OpenMS                 |     🔄 ^7     |          🔄           |      🔄       |      🔄      |      🔄       |      ✅      |
 | AlphaPept / AlphaDIA   |      ✅       |          ✅           |      🔄       |      🔄      |      🔄       |      ✅      |
 | Skyline                |      ✅       |          ✅           |      ✅       |      ✅      |      ✅       |    ✅ ^9     |
 | Spectronaut 💰         |      ✅       |          ✅           |      ✅       |      —       |      ✅       |    ✅ ^8     |
-| Proteome Discoverer 💰 |      ✅       |        🟡 ^10          |      🟡       |      🟡      |      🟡       |      ✅      |
+| Proteome Discoverer 💰 |      ✅       |        🟡 ^10         |      🟡       |      🟡      |      🟡       |      ✅      |
 | PEAKS Studio 💰        |      ✅       |          ✅           |      ✅       |      ✅      |      ✅       |    ✅ ^11    |
 
 **Notes**

@@ -146,9 +146,9 @@ If your group standardizes on Snakemake rather than Nextflow: **MPUSP/snakemake-
 This is one well-trodden path, not the only correct one. It does not cover isobaric labeling (TMT/iTRAQ), DIA, targeted (PRM/SRM), or specialized branches (PTM-site localization, immunopeptidomics, single-cell), each of which has its own workflow page or guide. Tool choices here are defaults, not endorsements - read the cross-linked pages and pick what fits your data and constraints.
 
 ## Related
-- Beginner's Guide - concepts and vocabulary (guides/beginners-guide.md).
-- File Format Cheat Sheet - what every extension is (guides/file-format-cheat-sheet.md).
-- Tool Compatibility Matrix - which tool reads which raw format, on which OS (guides/compatibility-matrix.md).
+- Beginner's Guide - concepts and vocabulary (../guides/beginners-guide.md).
+- File Format Cheat Sheet - what every extension is (../guides/file-format-cheat-sheet.md).
+- Tool Compatibility Matrix - which tool reads which raw format, on which OS (../guides/compatibility-matrix.md).
 - README sections: Quantitative Proteomics, Identification, Statistical Analysis, Bioinformatics & Computational Tools.
 
 *This workflow reflects the author's experience as of the last reviewed date. Spot an error or something out of date? Open a [Discussion or update PR](../CONTRIBUTING.md#writing-a-guide) - workflows are meant to be refreshed. When experts genuinely disagree and cannot reconcile, we also welcome [competing guides](../GOVERNANCE.md#guide-disagreements).*

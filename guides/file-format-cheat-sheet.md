@@ -142,7 +142,7 @@ Native vendor reading often depends on the operating system (Windows for most Th
 - [Discovery Proteomics](../README.md#discovery-proteomics) - DDA search and quantification suites
 - [DIA Tools](../README.md#dia-tools) - DIA software that consumes these formats
 - [Targeted / SRM / PRM](../README.md#targeted--srm--prm) - Skyline and targeted assay tools
-- [Tool Compatibility Matrix](compatibility-matrix.md) - which tools read which formats (planned)
+- [Tool Compatibility Matrix](compatibility-matrix.md) - which tools read which formats
 
 ---
 
