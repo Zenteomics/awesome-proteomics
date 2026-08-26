@@ -27,7 +27,7 @@ Raw files --> [Step 1: Convert] --> mzML --> [Step 2: Search] --> pepXML --> [St
 - **Input**: `.raw` files
 - **Output**: `.mzML` files
 
-**Alternatives**: [ProteoWizard msconvert](../README.md#bioinformatics--computational-tools) (GUI available, broader format support)
+**Alternatives**: [ProteoWizard msconvert](../README.md#data-repositories--standards) (GUI available, broader format support)
 
 ## Step 2: Database search
 
