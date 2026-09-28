@@ -29,7 +29,7 @@ Closes #___
 - [ ] The tool/resource has documentation (README, wiki, or user guide)
 - [ ] For software: the repo shows signs of maintenance or has an established user base
 - [ ] Entry is not already listed (I checked cross-references too)
-- [ ] Description is one line, factual, and follows the [format guide](./CONTRIBUTING.md#entry-format)
+- [ ] Description is one line, factual, and follows the [format guide](https://github.com/zenteomics/awesome-proteomics/blob/main/CONTRIBUTING.md#entry-format)
 - [ ] Entry is placed in the correct section, alphabetically
 - [ ] Cross-references added for multi-category tools (if applicable)
 - [ ] Commercial tools are marked with 💰
@@ -50,7 +50,7 @@ Closes #___
 
 <!-- If this PR adds a deprecated tool entry, complete this checklist. -->
 
-- [ ] Follows the [obituary format](./CONTRIBUTING.md#obituary-format) (successor, original contribution, reason, last version)
+- [ ] Follows the [obituary format](https://github.com/zenteomics/awesome-proteomics/blob/main/CONTRIBUTING.md#obituary-format) (successor, original contribution, reason, last version)
 - [ ] Successor tool is already listed in the main list (or included in this PR)
 
 ## Disclosure
@@ -62,7 +62,7 @@ Closes #___
 
 ## AI assistance
 
-<!-- We welcome AI-assisted drafting, but the contributor is the final authority. See our [AI policy](./CONTRIBUTING.md#use-of-ai-assisted-tools). -->
+<!-- We welcome AI-assisted drafting, but the contributor is the final authority. See our [AI policy](https://github.com/zenteomics/awesome-proteomics/blob/main/CONTRIBUTING.md#use-of-ai-assisted-tools). -->
 
 - [ ] No AI tools were used in this contribution
 - [ ] AI tools were used for drafting. I have verified all links, claims, and descriptions personally.

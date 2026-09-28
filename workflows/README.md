@@ -20,19 +20,19 @@ Every workflow includes:
 
 | Workflow | Status | Description |
 | --- | --- | --- |
-| [Label-Free DDA](label-free-dda.md) | Current | End-to-end label-free DDA with quantms (Nextflow), from raw files to differential abundance; FragPipe and MaxQuant alternatives, plus a sourced list of recent Nextflow pipelines. |
+| [Label-Free DDA](label-free-dda.md) | Current | Label-free DDA with quantms 1.10.0 and a separate MSstats step, from raw files and sample metadata to differential abundance; includes FragPipe and MaxQuant alternatives. |
 
 ## Planned workflows
 
 | Workflow | Status | Description |
 | --- | --- | --- |
-| [DIA Analysis](dia-analysis.md) | Planned | Library-based and library-free approaches. DIA-NN and Spectronaut paths. |
-| [Phosphoproteomics](phosphoproteomics.md) | Planned | Enrichment to localization scoring. IMAC/TiO2 to MaxQuant/MSFragger. |
-| [Single-Cell Proteomics](single-cell.md) | Planned | Sample prep to quantification. SCoPE2, plexDIA, and label-free approaches. |
+| DIA Analysis | Planned | Library-based and library-free approaches. DIA-NN and Spectronaut paths. |
+| Phosphoproteomics | Planned | Enrichment to localization scoring. IMAC/TiO2 to MaxQuant/MSFragger. |
+| Single-Cell Proteomics | Planned | Sample prep to quantification. SCoPE2, plexDIA, and label-free approaches. |
 
 ## Writing a workflow
 
-1. **Propose**: Open a [Guide Proposal issue](https://github.com/zenteomics/awesome-proteomics/issues/new?template=guide-proposal.yml) (select "Workflow" as the type).
+1. **Propose**: Open a [Guide Proposal issue](https://github.com/zenteomics/awesome-proteomics/issues/new?template=guide-proposal.yaml) (select "Workflow" as the type).
 2. **Write**: Use the [workflow template](WORKFLOW_TEMPLATE.md). Include real commands and config snippets.
 3. **Submit**: Open a PR. One reviewer checks for accuracy and reproducibility.
 4. **Publish**: After merge, your workflow appears here and gets cross-linked from the relevant README section.

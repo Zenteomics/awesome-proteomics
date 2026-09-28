@@ -37,14 +37,14 @@ It does **not** rank tools by quality or sensitivity - that belongs in tool-spec
 - 🔄 **Convert to `mzML` first** (typically with ProteoWizard MSConvert)
 - 🟡 **Partial / version- or module-dependent** (see notes)
 - — Not supported, or not a typical input
-- 💰 Commercial (paid license required)
+- 💰 Commercial or paid license (a free academic tier may exist)
 
 ## Matrix 1 - Native raw-format support
 
 | Tool                   | Thermo `.raw` | Bruker `.d` (timsTOF) | SCIEX `.wiff` | Agilent `.d` | Waters `.raw` | Open `.mzML` |
 | ---------------------- | :-----------: | :-------------------: | :-----------: | :----------: | :-----------: | :----------: |
 | FragPipe / MSFragger   |      ✅       |         ✅ ^1         |      🔄       |      🔄      |      🔄       |      ✅      |
-| DIA-NN                 |      ✅       |          ✅           |     ✅ ^2     |      🔄      |      🔄       |      ✅      |
+| DIA-NN 💰              |      ✅       |          ✅           |     ✅ ^2     |      🔄      |      🔄       |      ✅      |
 | MaxQuant               |      ✅       |          ✅           |      ✅       |      ✅      |      🔄       |      ✅      |
 | MetaMorpheus           |      ✅       |          🔄           |      🔄       |      🔄      |      🔄       |    ✅ ^3     |
 | Sage                   |     🟡 ^4     |         🟡 ^4         |      🔄       |      🔄      |      🔄       |    ✅ ^5     |
@@ -75,7 +75,7 @@ It does **not** rank tools by quality or sensitivity - that belongs in tool-spec
 | Tool                   | Windows | Linux | macOS | Interface              | License         |
 | ---------------------- | :-----: | :---: | :---: | ---------------------- | --------------- |
 | FragPipe / MSFragger   |   ✅    |  ✅   |  🟡   | GUI + CLI              | Free (academic) |
-| DIA-NN                 |   ✅    |  ✅   |   —   | GUI (Win) + CLI        | Free            |
+| DIA-NN 💰              |   ✅    |  ✅   |   —   | GUI (Win) + CLI        | Paid Enterprise; limited free Academia |
 | MaxQuant               |   ✅    |  ✅   |   —   | GUI (Win) + CLI        | Free            |
 | MetaMorpheus           |   ✅    |  ✅   |  ✅   | GUI + CLI              | Open source     |
 | Sage                   |   ✅    |  ✅   |  ✅   | CLI                    | Open source     |
@@ -87,6 +87,7 @@ It does **not** rank tools by quality or sensitivity - that belongs in tool-spec
 | Proteome Discoverer 💰 |   ✅    |   —   |   —   | GUI                    | Commercial      |
 | PEAKS Studio 💰        |   ✅    |   —   |  🟡   | GUI                    | Commercial      |
 
+- DIA-NN licensing checked on: 2026-09-27. Enterprise is paid; the free Academia edition has limited features and is restricted to non-profit academic research. See the [official edition and licensing information](https://github.com/vdemichev/DiaNN#dia-nn).
 - MaxQuant runs as a GUI on Windows and from the command line on Linux (via .NET/Mono).
 - FragPipe and MetaMorpheus run on macOS, but native **vendor** reading is most reliable on Windows/Linux; on macOS, plan to work from `mzML`.
 - Skyline is a Windows application; Linux/macOS use is typically through containers or remote Windows, not a native build.
@@ -125,7 +126,7 @@ Everything else - SCIEX `.wiff`, Agilent `.d`, Waters `.raw` - depends on **Wind
 - **"I have SCIEX `.wiff`"** - MaxQuant, Spectronaut, Skyline, and PEAKS read it natively. DIA-NN reads it on Windows with the SCIEX DLLs. Otherwise convert to `mzML`.
 - **"I have Agilent `.d`"** - MaxQuant, Skyline, and PEAKS read it natively; otherwise convert to `mzML`.
 - **"I have Waters `.raw`"** - Spectronaut, Skyline, and PEAKS read it natively; otherwise convert to `mzML`.
-- **"I work on Linux/macOS with open-source tools"** - standardize on `mzML` and use Comet, Sage, OpenMS, MetaMorpheus, FragPipe, or DIA-NN. Thermo `.raw` and Bruker `.tdf`/`.tsf` also work natively there.
+- **"I need open-source tools on Linux/macOS"** - consider Comet, Sage, OpenMS, or MetaMorpheus with `mzML` input; check the platform and format tables above for native vendor readers. DIA-NN is available on Linux under the edition restrictions described above.
 
 ## A note on completeness
 
@@ -134,7 +135,7 @@ This matrix is **not exhaustive**. It covers widely used tools and the most comm
 ## Caveats
 
 - "Native" here means the tool opens the format without a separate conversion step. It does not promise every acquisition mode (DDA, DIA/PASEF, MS3, ion mobility) is equally supported - check the tool's mode-specific docs.
-- Commercial tools (💰) often have the broadest native vendor coverage, but exact support is gated by version and licensed modules.
+- For commercial tools (💰), check which formats and features are included in your edition and licensed modules.
 - Converting to `mzML` is safe and universal, but it can be lossy or bulky for ion-mobility data; for timsTOF, prefer keeping native `.d` when the tool supports it.
 - This page focuses on **bottom-up** discovery tools. Targeted (SRM/PRM) and top-down workflows have their own tooling and compatibility quirks.
 

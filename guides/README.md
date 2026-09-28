@@ -22,20 +22,21 @@ When contributors disagree, we welcome competing guides. Both stay in the direct
 | [Beginner's Guide to Proteomics Data Analysis](beginners-guide.md) | Full | Current | Zero-jargon intro: data formats, experiment types, first tools, where to learn more. Merges the former getting-started.md entry point. |
 | [File Format Cheat Sheet](file-format-cheat-sheet.md) | Reference | Current | Every common proteomics file family (raw vendor, open spectrum, identification, quantification, libraries, FASTA) plus a Rosetta Stone conversion table. |
 | [Tool Compatibility Matrix](compatibility-matrix.md) | Reference | Current | Which tools read which vendor formats? |
+
 ## Planned guides
 
 | Guide | Type | Status | Description |
 | --- | --- | --- | --- |
-| [Starter Packs](starter-packs.md) | Mini-guide | Planned | "What 3 tools do I need?" for DDA, DIA, PTMs, single-cell |
-| [DIA Tools Comparison](dia-tools-comparison.md) | Full | Planned | DIA-NN vs Spectronaut vs MaxDIA vs others |
-| [Single-Cell Proteomics Best Practices](single-cell-best-practices.md) | Full | Planned | Sample prep to quantification |
-| [AI/ML and Foundation Models in Proteomics](ai-ml-in-proteomics.md) | Full | Planned | pLMs, spectrum prediction, retention time models |
-| [PTM Analysis Strategy](ptm-analysis-strategy.md) | Full | Planned | Choosing enrichment, search, and localization tools by PTM type |
-| [Emerging Trends in Proteomics](emerging-trends-2026.md) | Full | Planned | Annual review, updated each January |
+| Starter Packs | Mini-guide | Planned | "What 3 tools do I need?" for DDA, DIA, PTMs, single-cell |
+| DIA Tools Comparison | Full | Planned | DIA-NN vs Spectronaut vs MaxDIA vs others |
+| Single-Cell Proteomics Best Practices | Full | Planned | Sample prep to quantification |
+| AI/ML and Foundation Models in Proteomics | Full | Planned | pLMs, spectrum prediction, retention time models |
+| PTM Analysis Strategy | Full | Planned | Choosing enrichment, search, and localization tools by PTM type |
+| Emerging Trends in Proteomics | Full | Planned | Annual review, updated each January |
 
 ## Writing a guide
 
-1. **Propose**: Open a [Guide Proposal issue](https://github.com/zenteomics/awesome-proteomics/issues/new?template=guide-proposal.yml) with your title, abstract, and outline.
+1. **Propose**: Open a [Guide Proposal issue](https://github.com/zenteomics/awesome-proteomics/issues/new?template=guide-proposal.yaml) with your title, abstract, and outline.
 2. **Write**: Use the [guide template](GUIDE_TEMPLATE.md). Keep it under 1,500 words. Cite facts. Mark opinions.
 3. **Submit**: Open a PR. One reviewer checks for accuracy, clarity, and tone.
 4. **Publish**: After merge, your guide appears here and gets cross-linked from the relevant README section.

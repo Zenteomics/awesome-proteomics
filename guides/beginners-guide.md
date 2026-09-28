@@ -90,7 +90,7 @@ You will also need a protein sequence database (usually a [UniProt](../README.md
 You do not need to learn every tool. For a first project, a small set covers most situations:
 
 - **DDA, all-in-one and beginner friendly:** [FragPipe](../README.md#discovery-proteomics) gives you a graphical pipeline built on MSFragger that handles identification and quantification end to end.
-- **DIA:** [DIA-NN](../README.md#dia-tools) is a widely used, well-documented choice that supports both library-free and spectral-library workflows.
+- **DIA:** [DIA-NN](../README.md#dia-tools) handles both library-free and spectral-library workflows. Its free Academia edition has limited features and is restricted to non-profit academic research; Enterprise is paid. Check the [official edition and licensing information](https://github.com/vdemichev/DiaNN#dia-nn) before choosing an edition.
 - **Targeted, and a strong teaching tool:** [Skyline](../README.md#targeted--srm--prm) has an active tutorial library and an approachable interface.
 - **Downstream statistics:** [MSstats](../README.md#statistical-analysis) (scriptable, R based) or [Perseus](../README.md#statistical-analysis) (graphical) take you from a quantification table to differential results.
 

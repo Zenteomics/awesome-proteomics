@@ -54,10 +54,10 @@ What this guide does not cover. What might change. When to revisit.
 
 ## Links
 
-- [Tool X](../README.md#section) - listed in the awesome list
-- [Tool Y](../README.md#section) - listed in the awesome list
-- [Relevant paper](https://doi.org/...)
+- Tool X - replace with a link to its entry in the [awesome list](../README.md).
+- Tool Y - replace with a link to its entry in the [awesome list](../README.md).
+- Relevant paper - add the verified DOI link.
 
 ---
 
-*This guide reflects the author's experience as of the last_reviewed date. If you disagree, we welcome [competing guides](../GOVERNANCE.md#competing-guides).*
+*This guide reflects the author's experience as of the last_reviewed date. If you disagree, we welcome [competing guides](../GOVERNANCE.md#guide-disagreements).*

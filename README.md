@@ -25,7 +25,7 @@
 
 > **New to proteomics data?** [Start here &rarr;](guides/beginners-guide.md)
 
-**Project Health** &middot; Links Verified: `2026-07-31` | New Tools this Month: `na` | Stale Entries Pruned: `na`
+**Project Health** &middot; Links Checked: `2026-09-27` (internal links and updated sources) | New Tools this Month: `na` | Stale Entries Pruned: `na`
 
 _Inclusion does not constitute endorsement. Commercial tools are marked with 💰. See the [contribution guidelines](CONTRIBUTING.md) for entry format and quality bar._
 
@@ -384,11 +384,11 @@ _Last Verified: Q2 2026_
 
 > DIA, targeted (SRM/PRM), and label-based quantification. Consolidates DIA and targeted approaches; will split via the [30/10 Rule](GOVERNANCE.md#the-3010-rule) when content density warrants it.
 
-&#x1F4D6; _Workflow:_ [Label-Free DDA](workflows/label-free-dda.md) &middot; [DIA Analysis](workflows/dia-analysis.md) _(planned)_
+&#x1F4D6; _Workflow:_ [Label-Free DDA](workflows/label-free-dda.md) &middot; DIA Analysis _(planned)_
 
 ### DIA Tools
 
-- [DIA-NN](https://github.com/vdemichev/DiaNN) - Automated DIA (and DDA) quantification with deep learning; 2.x adds Proteoform Confidence for peptidoform/protein-level confidence closer to DDA and PTM model fine-tuning. Full 2.x requires Enterprise license or limited Academia edition for non-profit research. `[DIA]` `[DDA]` `[Label-Free]` `[GUI]` `[CLI]` 🐧 🪟 ([benchmark](https://doi.org/10.1021/acs.jproteome.1c00490))
+- [DIA-NN](https://github.com/vdemichev/DiaNN) - Automated DIA and DDA quantification with deep learning, Proteoform Confidence scoring, and PTM model fine-tuning; Enterprise is paid, while the free Academia edition has limited features and is restricted to non-profit academic research. `[DIA]` `[DDA]` `[Label-Free]` `[GUI]` `[CLI]` 💰 🐧 🪟 ([benchmark](https://doi.org/10.1021/acs.jproteome.1c00490))
 - [Spectronaut](https://biognosys.com/software/spectronaut/) - Commercial DIA analysis software supporting directDIA and spectral-library workflows (Spectronaut **21**; Pulsar/Kuiper search). `[DIA]` `[GUI]` 💰 ([benchmark](https://doi.org/10.1021/acs.jproteome.1c00490))
 - [Scaffold DIA](https://www.proteomesoftware.com/products/scaffold-dia) - Commercial DIA identification/quantification with Scaffold-style visualization (DDA/Prosit/custom libraries; DIA-NN/Spectronaut/PEAKS import; v5.0.0). `[DIA]` `[GUI]` 💰
 - [OpenSWATH](https://openms.readthedocs.io/en/latest/tutorials/knime-user-tutorial/openswath.html) - Targeted analysis of DIA and SWATH-MS data within the OpenMS ecosystem. `[DIA]` `[Targeted]` `[CLI]` ([benchmark](https://doi.org/10.1038/nbt.3685))
@@ -455,7 +455,7 @@ _Last Verified: Q2 2026_
 
 > Tools and resources organized by modification type. For unrestricted (open) modification discovery, see also the search engines under [Bioinformatics & Computational Tools](#bioinformatics--computational-tools).
 
-&#x1F4D6; _Guide:_ [PTM Analysis Strategy](guides/ptm-analysis-strategy.md) _(planned)_
+&#x1F4D6; _Guide:_ PTM Analysis Strategy _(planned)_
 
 ### Phosphoproteomics
 
@@ -588,7 +588,7 @@ _Last Verified: Q2 2026_
 
 > Tools and resources for single-cell and low-input proteomics. Entries require documentation and at least one published use case.
 
-&#x1F4D6; _Guide:_ [Single-Cell Best Practices](guides/single-cell-best-practices.md) _(planned)_
+&#x1F4D6; _Guide:_ Single-Cell Best Practices _(planned)_
 
 - [scp](https://bioconductor.org/packages/scp) - Bioconductor package for processing and analyzing MS-based single-cell proteomics data; includes the scplainer linear-modeling workflow for variance, differential abundance, and batch-aware analysis ([paper](https://doi.org/10.1186/s13059-025-03713-4)). `[CLI]` `[API]`
 - [SCeptre](https://github.com/bfurtwa/SCeptre) - Python package that extends Scanpy to analyze multiplexed single-cell proteomics data. `[CLI]`
@@ -622,7 +622,7 @@ _Last Verified: Q2 2026_
 
 - [MaxQuant](https://maxquant.org/) - Quantitative proteomics software for analyzing large mass spectrometric data sets. `[DDA]` `[Label-Free]` `[TMT]` `[SILAC]` `[GUI]` 🪟
 - [MSFragger](https://msfragger.nesvilab.org/) - Fragment-ion indexing database search engine for peptide identification. `[DDA]` `[DIA]` `[CLI]`
-- [DIA-NN](https://github.com/vdemichev/DiaNN) - Deep neural network-based software for DIA and DDA proteomics (2.x Proteoform Confidence). `[DIA]` `[DDA]` `[Label-Free]` `[CLI]` 🐧 🪟
+- [DIA-NN](https://github.com/vdemichev/DiaNN) - Deep neural network-based software for DIA and DDA proteomics; see [DIA Tools](#dia-tools) for Enterprise and Academia licensing details. `[DIA]` `[DDA]` `[Label-Free]` `[CLI]` 💰 🐧 🪟
 
 <details>
 <summary><b>Sub-section index</b> (click to expand)</summary>
@@ -974,7 +974,7 @@ _Last Verified: Q2 2026_
 
 > Spectrum prediction (Prosit, Koina), retention time prediction, protein representation learning (ESM, ProtTrans), and AlphaFold integrations applied to MS data.
 
-&#x1F4D6; _Guide:_ [AI/ML in Proteomics](guides/ai-ml-in-proteomics.md) _(planned)_
+&#x1F4D6; _Guide:_ AI/ML in Proteomics _(planned)_
 
 - [Koina](https://koina.wilhelmlab.org/) - Open service and API network that serves many proteomics ML models (Prosit, AlphaPeptDeep, and more) for prediction and rescoring. `[API]` 📦
 - [AlphaPeptDeep](https://github.com/MannLabs/alphapeptdeep) - Deep learning framework for building MS2, retention time, and collision cross section prediction models. `[CLI]` `[GUI]` `[API]`
@@ -1461,11 +1461,11 @@ This repository has two companion directories for content that goes beyond a lin
 
 **Published guides:** [Beginner's Guide](guides/beginners-guide.md) &middot; [File Format Cheat Sheet](guides/file-format-cheat-sheet.md) &middot; [Tool Compatibility Matrix](guides/compatibility-matrix.md)
 
-**Planned guides:** [Starter Packs](guides/starter-packs.md) &middot; [DIA Tools Comparison](guides/dia-tools-comparison.md)
+**Planned guides:** Starter Packs &middot; DIA Tools Comparison
 
 **Published workflows:** [Label-Free DDA](workflows/label-free-dda.md)
 
-**Planned workflows:** [DIA Analysis](workflows/dia-analysis.md) &middot; [Phosphoproteomics](workflows/phosphoproteomics.md) &middot; [Single-Cell](workflows/single-cell.md)
+**Planned workflows:** DIA Analysis &middot; Phosphoproteomics &middot; Single-Cell
 
 Want to write a guide? See [Writing a guide](CONTRIBUTING.md#writing-a-guide) or [Writing a workflow](CONTRIBUTING.md#writing-a-workflow) in CONTRIBUTING.md.
 
